@@ -1,0 +1,7 @@
+
+State Machine - |multiplier|current_state
+Name current_state.FINISH current_state.CALC current_state.LOAD current_state.IDLE 
+current_state.IDLE 0 0 0 0 
+current_state.LOAD 0 0 1 1 
+current_state.CALC 0 1 0 1 
+current_state.FINISH 1 0 0 1 

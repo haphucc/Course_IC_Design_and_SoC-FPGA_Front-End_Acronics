@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue May 27 19:53:22 2025
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : exponent_1_input
+Top-level Entity Name : exponent_1_input
+Family : Cyclone IV E
+Total logic elements : 952
+    Total combinational functions : 951
+    Dedicated logic registers : 50
+Total registers : 50
+Total pins : 80
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

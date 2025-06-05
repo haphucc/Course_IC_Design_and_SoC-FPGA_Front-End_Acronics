@@ -1,0 +1,239 @@
+module multiplier (
+    input wire i_clk, i_rst_n,
+    input wire i_load, i_start,
+    input [3:0] i_A, i_B,
+    output reg o_done,
+    output reg [7:0] o_P,
+    output reg [6:0] A_unit, A_ten, B_unit, B_ten, P_unit, P_ten, P_hundred
+);
+
+    parameter IDLE = 3'b000, LOAD_A = 3'b001, LOAD_B = 3'b010, CALC = 3'b011, FINISH = 3'b100;
+
+    reg [2:0] current_state, next_state;
+    reg [3:0] reg_A, reg_B;
+    reg [7:0] reg_P;
+    reg load_A, load_B, load_P, sel_P, shift_A, shift_B, CNT;
+    reg [2:0] calc_counter;
+
+    // khoi trang thai hien tai
+    always @(posedge i_clk or negedge i_rst_n) begin
+        if (!i_rst_n)
+            current_state <= IDLE;
+        else
+            current_state <= next_state;
+    end
+
+    // khoi logic trang thai ke tiep
+    always @(*) begin
+        case (current_state)
+            IDLE: next_state = (i_load && !CNT) ? LOAD_A : IDLE;
+            LOAD_A: next_state = (i_load && CNT) ? LOAD_B : LOAD_A;
+            LOAD_B: next_state = (i_start) ? CALC : LOAD_B;
+            CALC: next_state = (calc_counter == 3'd4) ? FINISH : CALC;
+            FINISH: next_state = (i_start && o_done) ? IDLE : FINISH;
+            default: next_state = IDLE;
+        endcase
+    end
+
+    // khoi xuat tin hieu dieu khien
+    always @(posedge i_clk or negedge i_rst_n) begin
+        if (!i_rst_n) begin
+            reg_A <= 4'b0;
+            reg_B <= 4'b0;
+            reg_P <= 8'b0;
+            load_A <= 0;
+            load_B <= 0;
+            load_P <= 0;
+            sel_P <= 0;
+            shift_A <= 0;
+            shift_B <= 0;
+            CNT <= 0;
+            calc_counter <= 0;
+            o_done <= 0;
+            o_P <= 8'b0;
+        end
+        else begin
+            case (current_state)
+                IDLE: begin
+                    load_A <= 0;
+                    load_B <= 0;
+                    load_P <= 1;
+                    sel_P <= 0;
+                    shift_A <= 0;
+                    shift_B <= 0;
+                    CNT <= 0;
+                    calc_counter <= 0;
+                    o_done <= 0;
+                end
+
+                LOAD_A: begin
+                    if (i_load && !CNT) begin
+                        reg_A <= i_A;
+                        load_A <= 1;
+                        CNT <= 1;
+                    end
+                end
+
+                LOAD_B: begin
+                    if (i_load && CNT) begin
+                        reg_B <= i_B;
+                        load_B <= 1;
+                        CNT <= 0;
+                    end
+                end
+
+                CALC: begin
+                    load_A <= 0;
+                    load_B <= 0;
+                    shift_A <= 1;
+                    shift_B <= 1;
+                    sel_P <= 1;
+
+                    if (reg_B[0]) begin
+                        reg_P <= reg_P + reg_A;
+                    end
+
+                    reg_A <= reg_A << 1;
+                    reg_B <= reg_B >> 1;
+                    calc_counter <= calc_counter + 1;
+                end
+
+                FINISH: begin
+                    o_done <= 1;
+                    o_P <= reg_P;
+                    shift_A <= 0;
+                    shift_B <= 0;
+                    sel_P <= 0;
+                end
+            endcase
+        end
+    end
+
+  
+    reg [3:0] A_unit_val, A_ten_val, B_unit_val, B_ten_val, P_unit_val, P_ten_val, P_hundred_val;
+
+
+    always @(reg_A or reg_B or reg_P) begin
+        A_unit_val = reg_A % 10;
+        A_ten_val = reg_A / 10;
+        B_unit_val = reg_B % 10;
+        B_ten_val = reg_B / 10;
+        P_unit_val = reg_P % 10;
+        P_ten_val = (reg_P / 10) % 10;
+        P_hundred_val = reg_P / 100;
+    end
+
+
+    always @(A_unit_val) begin
+        case (A_unit_val)
+            4'd0: A_unit = 7'b1000000;
+            4'd1: A_unit = 7'b1111001;
+            4'd2: A_unit = 7'b0100100;
+            4'd3: A_unit = 7'b0110000;
+            4'd4: A_unit = 7'b0011001;
+            4'd5: A_unit = 7'b0010010;
+            4'd6: A_unit = 7'b0000010;
+            4'd7: A_unit = 7'b1111000;
+            4'd8: A_unit = 7'b0000000;
+            4'd9: A_unit = 7'b0010000;
+            default: A_unit = 7'b0111111;
+        endcase
+    end
+
+    always @(A_ten_val) begin
+        case (A_ten_val)
+            4'd0: A_ten = 7'b1000000;
+            4'd1: A_ten = 7'b1111001;
+            4'd2: A_ten = 7'b0100100;
+            4'd3: A_ten = 7'b0110000;
+            4'd4: A_ten = 7'b0011001;
+            4'd5: A_ten = 7'b0010010;
+            4'd6: A_ten = 7'b0000010;
+            4'd7: A_ten = 7'b1111000;
+            4'd8: A_ten = 7'b0000000;
+            4'd9: A_ten = 7'b0010000;
+            default: A_ten = 7'b0111111;
+        endcase
+    end
+
+    always @(B_unit_val) begin
+        case (B_unit_val)
+            4'd0: B_unit = 7'b1000000;
+            4'd1: B_unit = 7'b1111001;
+            4'd2: B_unit = 7'b0100100;
+            4'd3: B_unit = 7'b0110000;
+            4'd4: B_unit = 7'b0011001;
+            4'd5: B_unit = 7'b0010010;
+            4'd6: B_unit = 7'b0000010;
+            4'd7: B_unit = 7'b1111000;
+            4'd8: B_unit = 7'b0000000;
+            4'd9: B_unit = 7'b0010000;
+            default: B_unit = 7'b0111111;
+        endcase
+    end
+
+    always @(B_ten_val) begin
+        case (B_ten_val)
+            4'd0: B_ten = 7'b1000000;
+            4'd1: B_ten = 7'b1111001;
+            4'd2: B_ten = 7'b0100100;
+            4'd3: B_ten = 7'b0110000;
+            4'd4: B_ten = 7'b0011001;
+            4'd5: B_ten = 7'b0010010;
+            4'd6: B_ten = 7'b0000010;
+            4'd7: B_ten = 7'b1111000;
+            4'd8: B_ten = 7'b0000000;
+            4'd9: B_ten = 7'b0010000;
+            default: B_ten = 7'b0111111;
+        endcase
+    end
+
+    always @(P_unit_val) begin
+        case (P_unit_val)
+            4'd0: P_unit = 7'b1000000;
+            4'd1: P_unit = 7'b1111001;
+            4'd2: P_unit = 7'b0100100;
+            4'd3: P_unit = 7'b0110000;
+            4'd4: P_unit = 7'b0011001;
+            4'd5: P_unit = 7'b0010010;
+            4'd6: P_unit = 7'b0000010;
+            4'd7: P_unit = 7'b1111000;
+            4'd8: P_unit = 7'b0000000;
+            4'd9: P_unit = 7'b0010000;
+            default: P_unit = 7'b0111111;
+        endcase
+    end
+
+    always @(P_ten_val) begin
+        case (P_ten_val)
+            4'd0: P_ten = 7'b1000000;
+            4'd1: P_ten = 7'b1111001;
+            4'd2: P_ten = 7'b0100100;
+            4'd3: P_ten = 7'b0110000;
+            4'd4: P_ten = 7'b0011001;
+            4'd5: P_ten = 7'b0010010;
+            4'd6: P_ten = 7'b0000010;
+            4'd7: P_ten = 7'b1111000;
+            4'd8: P_ten = 7'b0000000;
+            4'd9: P_ten = 7'b0010000;
+            default: P_ten = 7'b0111111;
+        endcase
+    end
+
+    always @(P_hundred_val) begin
+        case (P_hundred_val)
+            4'd0: P_hundred = 7'b1000000;
+            4'd1: P_hundred = 7'b1111001;
+            4'd2: P_hundred = 7'b0100100;
+            4'd3: P_hundred = 7'b0110000;
+            4'd4: P_hundred = 7'b0011001;
+            4'd5: P_hundred = 7'b0010010;
+            4'd6: P_hundred = 7'b0000010;
+            4'd7: P_hundred = 7'b1111000;
+            4'd8: P_hundred = 7'b0000000;
+            4'd9: P_hundred = 7'b0010000;
+            default: P_hundred = 7'b0111111;
+        endcase
+    end
+
+endmodule

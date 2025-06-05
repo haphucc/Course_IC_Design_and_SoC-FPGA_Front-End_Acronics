@@ -1,0 +1,8 @@
+
+State Machine - |exponent_1_input|current_state
+Name current_state.CALC current_state.LOAD_A current_state.LOAD_X current_state.IDLE current_state.FINISH 
+current_state.IDLE 0 0 0 0 0 
+current_state.LOAD_X 0 0 1 1 0 
+current_state.LOAD_A 0 1 0 1 0 
+current_state.CALC 1 0 0 1 0 
+current_state.FINISH 0 0 0 1 1 
