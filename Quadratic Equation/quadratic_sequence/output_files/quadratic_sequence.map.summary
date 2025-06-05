@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Jun 05 20:26:38 2025
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : quadratic_sequence
+Top-level Entity Name : quadratic_sequence
+Family : Cyclone IV E
+Total logic elements : 1,192
+    Total combinational functions : 1,181
+    Dedicated logic registers : 60
+Total registers : 60
+Total pins : 67
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

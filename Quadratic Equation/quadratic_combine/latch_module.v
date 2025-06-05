@@ -1,0 +1,17 @@
+module latch_module (
+    input wire lock,              // Lock signal
+    input wire signed [3:0] x1_in, // Input x1 (4-bit signed)
+    input wire signed [3:0] x2_in, // Input x2 (4-bit signed)
+    output reg signed [3:0] x1_out,// Latched x1 output
+    output reg signed [3:0] x2_out // Latched x2 output
+);
+
+    // Combinational latch logic (D latch, asynchronous)
+    always @(*) begin
+        if (lock) begin
+            x1_out = x1_in;
+            x2_out = x2_in;
+        end
+    end
+
+endmodule

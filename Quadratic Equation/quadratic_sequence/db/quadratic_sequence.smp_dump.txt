@@ -1,0 +1,14 @@
+
+State Machine - |quadratic_sequence|current_state
+Name current_state.READ_X2 current_state.READ_X1 current_state.READ_X current_state.FINISH current_state.CALC_ROOTS current_state.CALC_SQRT current_state.CALC_DELTA current_state.GET_C current_state.GET_B current_state.GET_A current_state.IDLE 
+current_state.IDLE 0 0 0 0 0 0 0 0 0 0 0 
+current_state.GET_A 0 0 0 0 0 0 0 0 0 1 1 
+current_state.GET_B 0 0 0 0 0 0 0 0 1 0 1 
+current_state.GET_C 0 0 0 0 0 0 0 1 0 0 1 
+current_state.CALC_DELTA 0 0 0 0 0 0 1 0 0 0 1 
+current_state.CALC_SQRT 0 0 0 0 0 1 0 0 0 0 1 
+current_state.CALC_ROOTS 0 0 0 0 1 0 0 0 0 0 1 
+current_state.FINISH 0 0 0 1 0 0 0 0 0 0 1 
+current_state.READ_X 0 0 1 0 0 0 0 0 0 0 1 
+current_state.READ_X1 0 1 0 0 0 0 0 0 0 0 1 
+current_state.READ_X2 1 0 0 0 0 0 0 0 0 0 1 

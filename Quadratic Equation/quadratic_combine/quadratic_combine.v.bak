@@ -1,0 +1,119 @@
+module quadratic_combine (
+    input wire i_enable,          // Control signal
+    input wire signed [3:0] i_a,  // Coefficient a (4-bit signed)
+    input wire signed [3:0] i_b,  // Coefficient b (4-bit signed)
+    input wire signed [3:0] i_c,  // Coefficient c (4-bit signed)
+    output reg [1:0] o_result,    // Root status: 00 (not computed), 01 (no roots), 10 (repeated root), 11 (two roots)
+    output wire signed [3:0] x1_out, // Latched x1 output (4-bit signed)
+    output wire signed [3:0] x2_out, // Latched x2 output (4-bit signed)
+    output wire [6:0] seg1_x1,    // LED 1 for x1 (sign)
+    output wire [6:0] seg2_x1,    // LED 2 for x1 (value)
+    output wire [6:0] seg1_x2,    // LED 1 for x2 (sign)
+    output wire [6:0] seg2_x2     // LED 2 for x2 (value)
+);
+
+    // Internal variables (từ quadratic_solver)
+    reg signed [15:0] delta;      // Delta = b^2 - 4ac (16-bit signed)
+    reg signed [15:0] b_squared;  // b^2
+    reg signed [15:0] four_ac;    // 4ac
+    wire [7:0] sqrt_delta;        // Square root of delta (8-bit unsigned)
+    reg signed [15:0] neg_b;      // -b
+    reg signed [15:0] temp_x1, temp_x2; // Temporary roots (16-bit signed)
+    reg signed [3:0] x1_temp, x2_temp;  // Temporary outputs for latch
+    wire lock;                    // Lock signal
+
+    // Instantiate square root module (từ quadratic_solver)
+    sqrt_module sqrt (
+        .delta(delta),
+        .sqrt_delta(sqrt_delta)
+    );
+
+    // OR gate for latch lock (từ quadratic_solver)
+    assign lock = o_result[0] | o_result[1]; // o_lock = 1 if o_result != 00
+
+    // Main combinational logic (tích hợp từ quadratic_solver)
+    always @(*) begin
+        if (!i_enable) begin
+            o_result = 2'b00;
+            x1_temp = 4'b0000;
+            x2_temp = 4'b0000;
+        end else begin
+            // Compute delta = b^2 - 4ac
+            b_squared = i_b * i_b;
+            four_ac = (i_a * i_c) << 2; // 4 * a * c
+            delta = b_squared - four_ac;
+
+            // Debug: Print delta and sqrt_delta
+            $display("Debug: delta=%d, sqrt_delta=%d", delta, sqrt_delta);
+
+            // Determine root status
+            if (i_a == 0) begin
+                o_result = 2'b01; // No roots
+                x1_temp = 4'b0000;
+                x2_temp = 4'b0000;
+            end else if (delta < 0) begin
+                o_result = 2'b01; // No roots
+                x1_temp = 4'b0000;
+                x2_temp = 4'b0000;
+            end else if (delta == 0) begin
+                o_result = 2'b10; // Repeated root
+                neg_b = -i_b;
+                temp_x1 = neg_b / (2 * i_a); // -b / (2a)
+                // Debug: Print intermediate values
+                $display("Debug (repeated root): neg_b=%d, temp_x1=%d", neg_b, temp_x1);
+                // Clamp to 4-bit signed range [-8, 7]
+                if (temp_x1 > 7) x1_temp = 4'sd7;
+                else if (temp_x1 < -8) x1_temp = -4'sd8;
+                else x1_temp = temp_x1[3:0];
+                x2_temp = x1_temp;
+                // Debug: Print clamped values
+                $display("Debug (repeated root): o_x1=%d, o_x2=%d", x1_temp, x2_temp);
+            end else begin
+                o_result = 2'b11; // Two roots
+                neg_b = -i_b;
+                // Cast sqrt_delta to signed for arithmetic
+                temp_x1 = (neg_b + $signed({1'b0, sqrt_delta})) / (2 * i_a); // (-b + sqrt(delta)) / (2a)
+                temp_x2 = (neg_b - $signed({1'b0, sqrt_delta})) / (2 * i_a); // (-b - sqrt(delta)) / (2a)
+                // Debug: Print intermediate values
+                $display("Debug (two roots): neg_b=%d, sqrt_delta=%d, temp_x1=%d, temp_x2=%d", neg_b, sqrt_delta, temp_x1, temp_x2);
+                // Clamp to 4-bit signed range [-8, 7]
+                if (temp_x1 > 7) x1_temp = 4'sd7;
+                else if (temp_x1 < -8) x1_temp = -4'sd8;
+                else x1_temp = temp_x1[3:0];
+                if (temp_x2 > 7) x2_temp = 4'sd7;
+                else if (temp_x2 < -8) x2_temp = -4'sd8;
+                else x2_temp = temp_x2[3:0];
+                // Debug: Print clamped values
+                $display("Debug (two roots): o_x1=%d, o_x2=%d", x1_temp, x2_temp);
+            end
+        end
+    end
+
+    // Instantiate latch_module (giữ nguyên từ quadratic_combine)
+    latch_module latch (
+        .lock(lock),
+        .x1_in(x1_temp),
+        .x2_in(x2_temp),
+        .x1_out(x1_out),
+        .x2_out(x2_out)
+    );
+
+    // Display x1 on two 7-segment LEDs (giữ nguyên từ quadratic_combine)
+    led_display display_x1 (
+        .x1(x1_out),
+        .x2(x1_out), // x2 not used
+        .display_select(1'b0),
+        .seg1(seg1_x1),
+        .seg2(seg2_x1)
+    );
+
+    // Display x2 on two 7-segment LEDs (giữ nguyên từ quadratic_combine)
+    led_display display_x2 (
+        .x1(x2_out),
+        .x2(x2_out), // x1 not used
+        .display_select(1'b0),
+        .seg1(seg1_x2),
+        .seg2(seg2_x2)
+    );
+
+endmodule
