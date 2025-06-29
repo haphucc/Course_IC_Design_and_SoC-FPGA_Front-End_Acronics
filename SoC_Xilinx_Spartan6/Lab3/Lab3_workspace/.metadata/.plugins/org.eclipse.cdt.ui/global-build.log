@@ -1,0 +1,1381 @@
+15:36:13 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../Lab3_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../Lab3_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling gpio"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+15:36:45 **** Build of project lab3_bsp ****
+make -k all 
+libgen -hw ../Lab3_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../Lab3_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling gpio"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+
+**** Build of configuration Debug for project lab3 ****
+
+Nothing to build for project lab3
+16:02:40 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/xilinx_14.7/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/lib/bs/m/le/crtinit.o: In function `_crtinit':
+/wrk/ptx/users/nagaraju/GCC_2013_03/newlib/libgloss/microblaze/crtinit.S:69: undefined reference to `main'
+collect2: ld returned 1 exit status
+make: *** [lab3.elf] Error 1
+16:02:50 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/xilinx_14.7/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/lib/bs/m/le/crtinit.o: In function `_crtinit':
+/wrk/ptx/users/nagaraju/GCC_2013_03/newlib/libgloss/microblaze/crtinit.S:69: undefined reference to `main'
+collect2: ld returned 1 exit status
+make: *** [lab3.elf] Error 1
+16:03:49 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5930	    308	   2098	   8336	   2090	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+16:09:55 **** Clean-only build of configuration Debug for project lab3 ****
+make clean 
+rm -rf  ./src/lab3.o  ./src/lab3.d  lab3.elf.size  lab3.elf.elfcheck  lab3.elf
+' '
+16:09:55 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5930	    308	   2098	   8336	   2090	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+18:15:34 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+18:15:35 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+20:06:37 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+../src/lab3.c: In function 'main':
+../src/lab3.c:11:21: warning: unused variable 'led' [-Wunused-variable]
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5930	    308	   2098	   8336	   2090	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+20:09:04 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+../src/lab3.c: In function 'main':
+../src/lab3.c:22:25: error: 'XPAR_LED_IP_0_DEVICE_ID' undeclared (first use in this function)
+../src/lab3.c:22:25: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/lab3.o] Error 1
+20:13:30 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+20:13:30 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+In file included from ../src/lab3.c:1:0:
+../../lab3_bsp/microblaze_0/include/xparameters.h:110:0: warning: "XPAR_GPIO_1_DEVICE_ID" redefined [enabled by default]
+../../lab3_bsp/microblaze_0/include/xparameters.h:99:0: note: this is the location of the previous definition
+../src/lab3.c: In function 'main':
+../src/lab3.c:22:25: error: 'XPAR_LED_IP_0_DEVICE_ID' undeclared (first use in this function)
+../src/lab3.c:22:25: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/lab3.o] Error 1
+20:13:41 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+In file included from ../src/lab3.c:1:0:
+../../lab3_bsp/microblaze_0/include/xparameters.h:110:0: warning: "XPAR_GPIO_1_DEVICE_ID" redefined [enabled by default]
+../../lab3_bsp/microblaze_0/include/xparameters.h:99:0: note: this is the location of the previous definition
+../src/lab3.c: In function 'main':
+../src/lab3.c:22:25: error: 'XPAR_LED_IP_0_DEVICE_ID' undeclared (first use in this function)
+../src/lab3.c:22:25: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/lab3.o] Error 1
+20:13:57 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+20:13:57 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+In file included from ../src/lab3.c:1:0:
+../../lab3_bsp/microblaze_0/include/xparameters.h:110:0: warning: "XPAR_GPIO_0_DEVICE_ID" redefined [enabled by default]
+../../lab3_bsp/microblaze_0/include/xparameters.h:92:0: note: this is the location of the previous definition
+../src/lab3.c: In function 'main':
+../src/lab3.c:22:25: error: 'XPAR_LED_IP_0_DEVICE_ID' undeclared (first use in this function)
+../src/lab3.c:22:25: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/lab3.o] Error 1
+20:16:16 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+20:16:16 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+In file included from ../src/lab3.c:1:0:
+../../lab3_bsp/microblaze_0/include/xparameters.h:111:0: warning: "XPAR_GPIO_0_DEVICE_ID" redefined [enabled by default]
+../../lab3_bsp/microblaze_0/include/xparameters.h:92:0: note: this is the location of the previous definition
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6238	    308	   2092	   8638	   21be	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+20:16:34 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+In file included from ../src/lab3.c:1:0:
+../../lab3_bsp/microblaze_0/include/xparameters.h:111:0: warning: "XPAR_GPIO_0_DEVICE_ID" redefined [enabled by default]
+../../lab3_bsp/microblaze_0/include/xparameters.h:92:0: note: this is the location of the previous definition
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6238	    308	   2092	   8638	   21be	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+20:16:55 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+20:16:56 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+make: Nothing to be done for `all'.
+20:18:36 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+20:18:36 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+20:19:21 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+20:19:22 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+20:20:08 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+../src/lab3.c: In function 'main':
+../src/lab3.c:11:21: warning: unused variable 'led' [-Wunused-variable]
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5930	    308	   2098	   8336	   2090	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+20:20:28 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+20:20:29 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+20:21:39 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6238	    308	   2092	   8638	   21be	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+20:21:51 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+20:21:51 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+20:26:10 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5950	    308	   2092	   8350	   209e	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+20:26:20 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5950	    308	   2092	   8350	   209e	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+20:27:37 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+20:27:37 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+20:31:33 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+../src/lab3.c: In function 'main':
+../src/lab3.c:28:9: error: 'LED_IP_BASEADDR' undeclared (first use in this function)
+../src/lab3.c:28:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/lab3.o] Error 1
+20:31:36 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5950	    308	   2092	   8350	   209e	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+20:32:16 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5950	    308	   2092	   8350	   209e	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+20:32:27 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5950	    308	   2092	   8350	   209e	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+20:39:28 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+20:39:28 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+make: Nothing to be done for `all'.
+20:48:59 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5950	    308	   2092	   8350	   209e	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+00:32:16 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5950	    308	   2092	   8350	   209e	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+00:52:54 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5954	    308	   2098	   8360	   20a8	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+00:53:08 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5954	    308	   2098	   8360	   20a8	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+00:54:06 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+../src/lab3.c: In function 'main':
+../src/lab3.c:20:9: error: 'psb_check' undeclared (first use in this function)
+../src/lab3.c:20:9: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab3.c:10:12: warning: unused variable 'push_check' [-Wunused-variable]
+make: *** [src/lab3.o] Error 1
+00:54:17 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5954	    308	   2098	   8360	   20a8	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+00:54:29 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5954	    308	   2098	   8360	   20a8	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+00:58:09 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5954	    308	   2098	   8360	   20a8	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+01:00:22 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5954	    308	   2098	   8360	   20a8	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+01:00:35 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5954	    308	   2098	   8360	   20a8	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+01:00:51 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5954	    308	   2098	   8360	   20a8	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+01:01:08 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/lab3.o: In function `main':
+E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\Lab3_workspace\lab3\Debug/../src/lab3.c:31: undefined reference to `usleep'
+collect2: ld returned 1 exit status
+make: *** [lab3.elf] Error 1
+01:15:37 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+../src/lab3.c:5:19: fatal error: unstd.h: No such file or directory
+compilation terminated.
+make: *** [src/lab3.o] Error 1
+01:15:43 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6010	    308	   2098	   8416	   20e0	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+01:20:27 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6022	    308	   2092	   8422	   20e6	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+01:21:15 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6022	    308	   2092	   8422	   20e6	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+01:21:56 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6022	    308	   2092	   8422	   20e6	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+01:24:20 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6022	    308	   2092	   8422	   20e6	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+09:46:10 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+09:46:10 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+09:47:44 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6022	    308	   2092	   8422	   20e6	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+09:47:56 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+09:47:56 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+09:49:21 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6022	    308	   2092	   8422	   20e6	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+09:49:48 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+09:49:48 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+09:56:35 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6022	    308	   2092	   8422	   20e6	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+09:56:49 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+09:56:49 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+09:57:28 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../lab3_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab3_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6022	    308	   2092	   8422	   20e6	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+09:57:42 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+09:57:42 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+10:11:59 **** Clean-only build of configuration Debug for project lab3 ****
+make clean 
+rm -rf  ./src/lab3.o  ./src/lab3.d  lab3.elf.size  lab3.elf.elfcheck  lab3.elf
+' '
+10:12:00 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6022	    308	   2092	   8422	   20e6	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+18:43:00 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+18:43:00 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+18:44:12 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+18:44:12 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+18:45:45 **** Clean-only build of configuration Debug for project lab3 ****
+make clean 
+rm -rf  ./src/lab3.o  ./src/lab3.d  lab3.elf.size  lab3.elf.elfcheck  lab3.elf
+' '
+18:45:45 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+'Building file: ../src/lab3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lab3.d" -MT"src/lab3.d" -o "src/lab3.o" "../src/lab3.c"
+'Finished building: ../src/lab3.c'
+' '
+'Building target: lab3.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab3.elf"  ./src/lab3.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab3.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab3.elf  |tee "lab3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6022	    308	   2092	   8422	   20e6	lab3.elf
+'Finished building: lab3.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck lab3.elf -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0  |tee "lab3.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../Lab3_hw_platform/system.xml -pe microblaze_0
+lab3.elf 
+
+ELF file	: lab3.elf
+elfcheck passed.
+'Finished building: lab3.elf.elfcheck'
+' '
+18:46:00 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+18:46:00 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+18:46:39 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+18:46:39 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+19:57:11 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+19:57:15 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../Lab3_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../Lab3_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+ERROR:EDK:410 - gpio -
+   E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\Lab3_workspace\standalon
+   e_bsp_0\system.mss line 27 - No IP instance named dip is present in the
+   hardware!
+ERROR:EDK:410 - generic -
+   E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\Lab3_workspace\standalon
+   e_bsp_0\system.mss line 33 - No IP instance named led_ip_0 is present in the
+   hardware!
+ERROR:EDK:410 - gpio -
+   E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\Lab3_workspace\standalon
+   e_bsp_0\system.mss line 51 - No IP instance named push is present in the
+   hardware!
+ERROR:EDK:1206 - Errors occured while parsing MSS file.
+make: *** [microblaze_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+19:57:17 **** Auto Build of configuration Debug for project lab3 ****
+make all 
+make: Nothing to be done for `all'.

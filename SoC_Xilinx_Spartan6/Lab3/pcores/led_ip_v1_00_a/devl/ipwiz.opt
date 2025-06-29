@@ -1,0 +1,9 @@
+-batch 
+-create led_ip 
+-ver 1.00.a 
+-dir "E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3" 
+-lang vhdl 
+-bus axi4lite s 
+-reg 1 
+-xps 
+-driver 

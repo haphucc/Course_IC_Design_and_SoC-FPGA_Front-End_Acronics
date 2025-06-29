@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\SDK\SDK_Export\hw\system.bit" key="Lab3_hw_platform-bitFile"/>
+	<item value="E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\Lab3_workspace\lab3\Debug\lab3.elf" key="Lab3_hw_platform-microblaze_0-initElf"/>
+	<item value="E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\SDK\SDK_Export\hw\system_bd.bmm" key="Lab3_hw_platform-bmmFile"/>
+</section>

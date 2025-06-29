@@ -1,0 +1,31 @@
+#include "xparameters.h"
+#include "xgpio.h"
+#include "xil_io.h"
+#include "xutil.h"
+
+
+int main (void)
+{
+    XGpio dip, push;
+    int i, push_check, dip_check;
+
+    XGpio_Initialize(&dip, XPAR_DIP_DEVICE_ID);
+    XGpio_SetDataDirection(&dip, 1, 0xffffffff);
+
+    XGpio_Initialize(&push, XPAR_PUSH_DEVICE_ID);
+    XGpio_SetDataDirection(&push, 1, 0xffffffff);
+
+    while (1)
+    {
+    	push_check = XGpio_DiscreteRead(&push, 1);
+        dip_check = XGpio_DiscreteRead(&dip, 1);
+
+        xil_printf("Push Buttons Status: %x\r\n", push_check);
+        xil_printf("DIP Switch Status: %x\r\n", dip_check);
+
+//        Xil_Out32(XPAR_LED_IP_0_BASEADDR, psb_check & 0b1111);
+        Xil_Out32(XPAR_LED_IP_0_BASEADDR, (~dip_check) & 0b1111);
+
+        for (i = 0; i < 999999; i++);
+    }
+}

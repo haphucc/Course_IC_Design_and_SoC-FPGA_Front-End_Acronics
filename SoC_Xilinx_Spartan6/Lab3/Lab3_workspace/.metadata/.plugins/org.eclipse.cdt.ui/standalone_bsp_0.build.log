@@ -1,0 +1,32 @@
+19:57:15 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../Lab3_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../Lab3_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+ERROR:EDK:410 - gpio -
+   E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\Lab3_workspace\standalon
+   e_bsp_0\system.mss line 27 - No IP instance named dip is present in the
+   hardware!
+ERROR:EDK:410 - generic -
+   E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\Lab3_workspace\standalon
+   e_bsp_0\system.mss line 33 - No IP instance named led_ip_0 is present in the
+   hardware!
+ERROR:EDK:410 - gpio -
+   E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\Lab3_workspace\standalon
+   e_bsp_0\system.mss line 51 - No IP instance named push is present in the
+   hardware!
+ERROR:EDK:1206 - Errors occured while parsing MSS file.
+make: *** [microblaze_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+
+19:57:16 Build Finished (took 1s.279ms)
+

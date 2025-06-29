@@ -1,0 +1,124 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: D:\Xilinx_14.7\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -p
+xc6slx45tfgg484-3 -nt timestamp -bm system.bmm
+E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/implementation/system.ngc
+-uc system.ucf system.ngd
+
+Reading NGO file
+"E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/implementation/system.ngc"
+...
+Loading design module
+"E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/implementation/system_rs23
+2_uart_1_wrapper.ngc"...
+Loading design module
+"E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/implementation/system_proc
+_sys_reset_0_wrapper.ngc"...
+Loading design module
+"E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/implementation/system_cloc
+k_generator_0_wrapper.ngc"...
+Loading design module
+"E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/implementation/system_micr
+oblaze_0_ilmb_wrapper.ngc"...
+Loading design module
+"E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/implementation/system_micr
+oblaze_0_dlmb_wrapper.ngc"...
+Loading design module
+"E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/implementation/system_axi4
+lite_0_wrapper.ngc"...
+Loading design module
+"E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/implementation/system_micr
+oblaze_0_wrapper.ngc"...
+Loading design module
+"E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/implementation/system_micr
+oblaze_0_i_bram_ctrl_wrapper.ngc"...
+Loading design module
+"E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/implementation/system_micr
+oblaze_0_d_bram_ctrl_wrapper.ngc"...
+Loading design module
+"E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/implementation/system_debu
+g_module_wrapper.ngc"...
+Loading design module
+"E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/implementation/system_push
+_wrapper.ngc"...
+Loading design module
+"E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/implementation/system_dip_
+wrapper.ngc"...
+Loading design module
+"E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/implementation/system_led_
+ip_0_wrapper.ngc"...
+Loading design module
+"E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/implementation/system_micr
+oblaze_0_bram_block_wrapper.ngc"...
+Applying constraints in
+"E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/implementation/system_micr
+oblaze_0_ilmb_wrapper.ncf" to module "microblaze_0_ilmb"...
+Checking Constraint Associations...
+Applying constraints in
+"E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/implementation/system_micr
+oblaze_0_dlmb_wrapper.ncf" to module "microblaze_0_dlmb"...
+Checking Constraint Associations...
+Applying constraints in
+"E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/implementation/system_axi4
+lite_0_wrapper.ncf" to module "axi4lite_0"...
+Checking Constraint Associations...
+Applying constraints in
+"E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/implementation/system_micr
+oblaze_0_wrapper.ncf" to module "microblaze_0"...
+Checking Constraint Associations...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "system.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:135 - Constraint <INST
+   /system/EXPANDED/system/axi4lite_0/axi4lite_0\/si_converter_bank\/gen_conv_sl
+   ot[0].clock_conv_inst\/interconnect_aresetn_resync<2>_inv1_INV_0 TNM =
+   FFS:axi4lite_0_reset_resync>: No instances of type FFS were found under block
+   "axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/int
+   erconnect_aresetn_resync<2>_inv1_INV_0" (type=INV).
+
+WARNING:ConstraintSystem:58 - Constraint <TIMEGRP axi4lite_0_reset_source = FFS
+   PADS CPUS;>: CPUS "*" does not match any design objects.
+
+WARNING:ConstraintSystem:194 - The TNM 'axi4lite_0_reset_resync', does not
+   directly or indirectly drive any flip-flops, latches and/or RAMs and is not
+   actively used by any referencing constraint.
+
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+   'TS_sys_clk_pin', was traced into PLL_ADV instance
+   clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst. The following new TNM
+   groups and period specifications were generated at the PLL_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 =
+   PERIOD "clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0" TS_sys_clk_pin
+   * 0.375 HIGH 50%>
+
+Done...
+
+Processing BMM file "system.bmm" ...
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[27].MEM_EX_Result_Inst' has unconnected output pin
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   4
+
+Total memory usage is 4478916 kilobytes
+
+Writing NGD file "system.ngd" ...
+Total REAL time to NGDBUILD completion:  25 sec
+Total CPU time to NGDBUILD completion:   24 sec
+
+Writing NGDBUILD log file "system.bld"...

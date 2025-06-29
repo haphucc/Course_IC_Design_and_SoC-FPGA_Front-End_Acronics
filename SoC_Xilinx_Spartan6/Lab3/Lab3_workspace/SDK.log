@@ -1,0 +1,47 @@
+01:30:37.117 INFO  - Processing command line option -hwspec E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\SDK\SDK_Export\hw\system.xml. 
+15:33:00.567 INFO  - Processing command line option -hwspec E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\SDK\SDK_Export\hw\system.xml. 
+15:33:00.853 INFO  - The hardware specification for project 'Lab3_hw_platform' is different from E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\SDK\SDK_Export\hw\system.xml. 
+15:33:01.649 INFO  - Copied contents of E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\SDK\SDK_Export\hw\system.xml into \Lab3_hw_platform\system.xml. 
+15:33:01.660 INFO  - Copied contents of E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\SDK\SDK_Export\hw\system.bit into \Lab3_hw_platform\system.bit. 
+15:33:01.662 INFO  - Copied contents of E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\SDK\SDK_Export\hw\system_bd.bmm into \Lab3_hw_platform\system_bd.bmm. 
+15:33:01.763 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+15:33:01.860 INFO  - Clearing existing target manager status. 
+15:33:04.653 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+16:09:54.862 INFO  - Successfully generated E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\Lab3_workspace\lab3\src\lscript.ld. 
+16:09:54.862 INFO  - Applying linker script to all configurations of project lab3. 
+16:09:54.862 INFO  - Setting rebuild state to true for all configurations of project lab3. 
+16:10:09.524 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+18:15:19.035 INFO  - Processing command line option -hwspec E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\SDK\SDK_Export\hw\system.xml. 
+18:15:24.079 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+18:15:34.483 INFO  - Copied contents of E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\SDK\SDK_Export\hw\system.bit into \Lab3_hw_platform\system.bit. 
+18:15:34.483 INFO  - Copied contents of E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\SDK\SDK_Export\hw\system_bd.bmm into \Lab3_hw_platform\system_bd.bmm. 
+20:18:35.309 INFO  - FPGA configured successfully with bitstream "E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/Lab3_workspace/Lab3_hw_platform/download.bit" 
+20:19:21.053 INFO  - FPGA configured successfully with bitstream "E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/Lab3_workspace/Lab3_hw_platform/download.bit" 
+20:20:27.892 INFO  - FPGA configured successfully with bitstream "E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/Lab3_workspace/Lab3_hw_platform/download.bit" 
+20:21:50.284 INFO  - FPGA configured successfully with bitstream "E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/Lab3_workspace/Lab3_hw_platform/download.bit" 
+20:27:36.712 INFO  - FPGA configured successfully with bitstream "E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/Lab3_workspace/Lab3_hw_platform/download.bit" 
+20:54:12.598 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+00:31:56.139 INFO  - Processing command line option -hwspec E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\SDK\SDK_Export\hw\system.xml. 
+09:45:49.712 INFO  - Processing command line option -hwspec E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\SDK\SDK_Export\hw\system.xml. 
+09:46:09.067 INFO  - FPGA configured successfully with bitstream "E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/Lab3_workspace/Lab3_hw_platform/download.bit" 
+09:47:55.721 INFO  - FPGA configured successfully with bitstream "E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/Lab3_workspace/Lab3_hw_platform/download.bit" 
+09:49:47.151 INFO  - FPGA configured successfully with bitstream "E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/Lab3_workspace/Lab3_hw_platform/download.bit" 
+09:56:48.177 INFO  - FPGA configured successfully with bitstream "E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/Lab3_workspace/Lab3_hw_platform/download.bit" 
+09:57:41.388 INFO  - FPGA configured successfully with bitstream "E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/Lab3_workspace/Lab3_hw_platform/download.bit" 
+11:22:16.974 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+18:42:28.842 INFO  - Processing command line option -hwspec E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\SDK\SDK_Export\hw\system.xml. 
+18:42:59.288 INFO  - FPGA configured successfully with bitstream "E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/Lab3_workspace/Lab3_hw_platform/download.bit" 
+18:44:11.272 INFO  - FPGA configured successfully with bitstream "E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/Lab3_workspace/Lab3_hw_platform/download.bit" 
+18:45:59.424 INFO  - FPGA configured successfully with bitstream "E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/Lab3_workspace/Lab3_hw_platform/download.bit" 
+18:46:38.913 INFO  - FPGA configured successfully with bitstream "E:/KhoaHoc_TKVM_ACRONICS/Xilinx_Platform_Studio/Lab3/Lab3_workspace/Lab3_hw_platform/download.bit" 
+19:23:42.550 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+19:57:09.603 INFO  - Processing command line option -hwspec E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Quadratic\SDK\SDK_Export\hw\system.xml. 
+19:57:11.595 INFO  - The hardware specification for project 'Lab3_hw_platform' is different from E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Quadratic\SDK\SDK_Export\hw\system.xml. 
+19:57:11.699 INFO  - Copied contents of E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Quadratic\SDK\SDK_Export\hw\system.xml into \Lab3_hw_platform\system.xml. 
+19:57:11.720 INFO  - Copied contents of E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Quadratic\SDK\SDK_Export\hw\system.bit into \Lab3_hw_platform\system.bit. 
+19:57:11.728 INFO  - Copied contents of E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Quadratic\SDK\SDK_Export\hw\system_bd.bmm into \Lab3_hw_platform\system_bd.bmm. 
+19:57:11.824 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+19:57:17.483 INFO  - Updating hardware inferred compiler options for lab3. 
+19:57:17.515 INFO  - Clearing existing target manager status. 
+19:57:17.925 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+19:57:33.638 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

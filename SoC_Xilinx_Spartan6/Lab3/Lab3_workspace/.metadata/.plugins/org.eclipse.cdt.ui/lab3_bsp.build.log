@@ -1,0 +1,6 @@
+19:57:11 **** Auto Build of project lab3_bsp ****
+make -k all 
+'Finished building libraries'
+
+19:57:12 Build Finished (took 346ms)
+

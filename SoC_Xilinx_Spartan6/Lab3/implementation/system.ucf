@@ -1,0 +1,32 @@
+#
+# pin constraints
+#
+NET CLK_N LOC = "K22"  |  DIFF_TERM = "TRUE"  |  IOSTANDARD = "LVDS_25";
+NET CLK_P LOC = "K21"  |  DIFF_TERM = "TRUE"  |  IOSTANDARD = "LVDS_25";
+
+NET dip_GPIO_IO_pin[0] LOC = "C18"  |  IOSTANDARD = "LVCMOS25";
+NET dip_GPIO_IO_pin[1] LOC = "Y6"  |  IOSTANDARD = "LVCMOS25";
+NET dip_GPIO_IO_pin[2] LOC = "W6"  |  IOSTANDARD = "LVCMOS25";
+NET dip_GPIO_IO_pin[3] LOC = "E4"  |  IOSTANDARD = "LVCMOS25";
+
+NET push_GPIO_IO_pin[0] LOC = "F3"  |  IOSTANDARD = "LVCMOS25";
+NET push_GPIO_IO_pin[1] LOC = "G6"  |  IOSTANDARD = "LVCMOS25";
+NET push_GPIO_IO_pin[2] LOC = "F5"  |  IOSTANDARD = "LVCMOS25";
+NET push_GPIO_IO_pin[3] LOC = "C1"  |  IOSTANDARD = "LVCMOS25";
+
+NET RESET LOC = "H8"  |  IOSTANDARD = "LVCMOS15"  |  TIG;
+NET RS232_Uart_1_sin LOC = "H17"  |  IOSTANDARD = "LVCMOS25";
+NET RS232_Uart_1_sout LOC = "B21"  |  IOSTANDARD = "LVCMOS25";
+
+NET "led_ip_0_LED_pin<0>" LOC = "D17" | IOSTANDARD = "LVCMOS25"; # DS3
+NET "led_ip_0_LED_pin<1>" LOC = "AB4" | IOSTANDARD = "LVCMOS25"; # DS4
+NET "led_ip_0_LED_pin<2>" LOC = "D21" | IOSTANDARD = "LVCMOS25"; # DS5
+NET "led_ip_0_LED_pin<3>" LOC = "W15" | IOSTANDARD = "LVCMOS25"; # DS6
+
+#
+# additional constraints
+#
+
+NET "CLK" TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 200000 kHz;
+

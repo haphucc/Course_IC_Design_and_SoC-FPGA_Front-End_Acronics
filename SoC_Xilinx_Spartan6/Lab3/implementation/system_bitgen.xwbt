@@ -1,0 +1,7 @@
+INFILE=E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\implementation\system.ncd
+OUTFILE=E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\implementation\system.bit
+FAMILY=Spartan6
+PART=xc6slx45t-3fgg484
+WORKINGDIR=E:\KhoaHoc_TKVM_ACRONICS\Xilinx_Platform_Studio\Lab3\implementation
+LICENSE=WebPack
+USER_INFO=__0_0_0
