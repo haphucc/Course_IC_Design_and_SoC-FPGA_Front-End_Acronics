@@ -1,0 +1,14 @@
+set -tmpdir E:\KhoaHoc_TKVM_Acronics\SoC_Xilinx_Spartan6\IP_Core_HamMu_Axi4Lite\synthesis\xst_temp_dir\
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc6slx45tfgg484-3
+-top system_rs232_uart_1_wrapper
+-ifmt MIXED
+-ifn system_rs232_uart_1_wrapper_xst.prj
+-ofn ../implementation/system_rs232_uart_1_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation}
+-vlgincdir {"E:\KhoaHoc_TKVM_Acronics\SoC_Xilinx_Spartan6\IP_Core_HamMu_Axi4Lite\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "D:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }

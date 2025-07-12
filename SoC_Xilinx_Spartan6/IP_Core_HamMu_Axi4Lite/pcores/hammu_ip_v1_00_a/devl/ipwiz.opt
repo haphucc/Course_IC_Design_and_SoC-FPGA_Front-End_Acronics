@@ -1,0 +1,9 @@
+-batch 
+-create hammu_ip 
+-ver 1.00.a 
+-dir "E:\KhoaHoc_TKVM_Acronics\SoC_Xilinx_Spartan6\IP_Core_HamMu_Axi4Lite" 
+-lang vhdl 
+-bus axi4lite s 
+-reg 1 
+-xps 
+-driver 

@@ -1,0 +1,84 @@
+/*
+ * hammu_ip_uart_delay.c
+ *
+ *  Created on: Jul 13, 2025
+ *      Author: HaPhuc
+ */
+
+#include "xparameters.h"
+#include "xil_io.h"
+#include "xil_printf.h"
+#include "xil_types.h"
+#include "xil_cache.h"
+#include <stdio.h>
+
+// === ADDR IP Core ===
+#define ADDR_X     0x70e00000  //  write X
+#define ADDR_A     0x70e00004  //  write A
+#define ADDR_START 0x70e00008  //  write start
+#define ADDR_P     0x70e0000C  //  read P
+#define ADDR_DONE  0x70e00010  //  read done
+
+
+void run_exponent_interface();
+int get_input(const char* prompt, int max_val);
+void write_input_to_ip(u32 x, u32 a);
+u32 wait_done_and_get_result();
+void Delay(int delay);
+
+
+int main() {
+    xil_printf("=== Chuong trinh nhap X, A tu UART va tinh X^A ===\r\n");
+    run_exponent_interface();
+    return 0;
+}
+
+
+void run_exponent_interface() {
+    u32 x, a, result;
+
+    while (1) {
+        x = get_input("Nhap gia tri X (0-15): ", 15);
+        a = get_input("Nhap gia tri A (0-15): ", 15);
+
+        write_input_to_ip(x, a);
+
+        result = wait_done_and_get_result();
+
+        xil_printf("✓ Ket qua: %d^%d = %d\r\n", x, a, result);
+    }
+}
+
+int get_input(const char* prompt, int max_val) {
+    int val;
+    while (1) {
+        xil_printf("%s", prompt);
+        scanf("%d", &val);
+
+        if (val >= 0 && val <= max_val) {
+            return val;
+        } else {
+            xil_printf("✗ Gia tri khong hop le. Thu lai.\r\n");
+        }
+    }
+}
+
+void write_input_to_ip(u32 x, u32 a) {
+    Xil_Out32(ADDR_X, x);
+    Xil_Out32(ADDR_A, a);
+    Xil_Out32(ADDR_START, 1);
+    Delay(500000);
+}
+
+u32 wait_done_and_get_result() {
+    u32 done;
+    do {
+        done = Xil_In32(ADDR_DONE);
+    } while ((done & 0x1) == 0);
+
+    return Xil_In32(ADDR_P);
+}
+
+void Delay(int delay) {
+    while (delay-- > 0);
+}

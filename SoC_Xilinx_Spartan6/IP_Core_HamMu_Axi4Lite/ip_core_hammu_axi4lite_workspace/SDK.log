@@ -1,0 +1,10 @@
+03:58:02.986 INFO  - Processing command line option -hwspec E:\KhoaHoc_TKVM_Acronics\SoC_Xilinx_Spartan6\IP_Core_HamMu_Axi4Lite\SDK\SDK_Export\hw\system.xml. 
+04:29:28.155 INFO  - Successfully generated E:\KhoaHoc_TKVM_Acronics\SoC_Xilinx_Spartan6\IP_Core_HamMu_Axi4Lite\ip_core_hammu_axi4lite_workspace\hammu_ip\src\lscript.ld. 
+04:29:28.156 INFO  - Applying linker script to all configurations of project hammu_ip. 
+04:29:28.157 INFO  - Setting rebuild state to true for all configurations of project hammu_ip. 
+04:29:55.860 INFO  - Successfully generated E:\KhoaHoc_TKVM_Acronics\SoC_Xilinx_Spartan6\IP_Core_HamMu_Axi4Lite\ip_core_hammu_axi4lite_workspace\hammu_ip\src\lscript.ld. 
+04:29:55.860 INFO  - Applying linker script to all configurations of project hammu_ip. 
+04:29:55.864 INFO  - Setting rebuild state to true for all configurations of project hammu_ip. 
+04:30:47.399 INFO  - Successfully generated E:\KhoaHoc_TKVM_Acronics\SoC_Xilinx_Spartan6\IP_Core_HamMu_Axi4Lite\ip_core_hammu_axi4lite_workspace\hammu_ip\src\lscript.ld. 
+04:30:47.399 INFO  - Applying linker script to all configurations of project hammu_ip. 
+04:30:47.400 INFO  - Setting rebuild state to true for all configurations of project hammu_ip. 

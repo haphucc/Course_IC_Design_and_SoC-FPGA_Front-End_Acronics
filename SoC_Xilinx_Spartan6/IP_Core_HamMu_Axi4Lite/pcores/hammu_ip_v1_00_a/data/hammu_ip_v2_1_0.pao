@@ -1,0 +1,12 @@
+##############################################################################
+## Filename:          E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/IP_Core_HamMu_Axi4Lite/pcores/hammu_ip_v1_00_a/data/hammu_ip_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Sun Jul 13 03:37:34 2025 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+
+lib hammu_ip_v1_00_a exponent verilog
+lib hammu_ip_v1_00_a exponent_axi4_lite_slave verilog
+lib hammu_ip_v1_00_a hammu_ip verilog
