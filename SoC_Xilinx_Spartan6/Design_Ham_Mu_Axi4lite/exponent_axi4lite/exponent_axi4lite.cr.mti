@@ -1,0 +1,22 @@
+E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent_axi4lite/tb_exponent_axi4_lite_slave.v {1 {vlog -work work -stats=none E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent_axi4lite/tb_exponent_axi4_lite_slave.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_exponent_axi4_lite_slave
+
+Top level modules:
+	tb_exponent_axi4_lite_slave
+
+} {} {}} E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent_axi4lite/exponent.v {1 {vlog -work work -stats=none E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent_axi4lite/exponent.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module exponent
+
+Top level modules:
+	exponent
+
+} {} {}} E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent_axi4lite/exponent_axi4_lite_slave.v {1 {vlog -work work -stats=none E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent_axi4lite/exponent_axi4_lite_slave.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module exponent_axi4_lite_slave
+
+Top level modules:
+	exponent_axi4_lite_slave
+
+} {} {}}

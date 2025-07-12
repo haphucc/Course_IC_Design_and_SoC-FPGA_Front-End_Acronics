@@ -1,0 +1,126 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent_axi4lite
+vexponent
+Z0 !s110 1752352408
+!i10b 1
+!s100 2f51iWC^:L<02_K57=1]N2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ISnMk]ZNKbTUHUcWgKFfK^1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dE:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip
+w1752340609
+8E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/exponent.v
+FE:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/exponent.v
+!i122 99
+L0 1 73
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1752352408.000000
+!s107 E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/exponent.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/exponent.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vexponent_axi4_lite_slave
+R0
+!i10b 1
+!s100 hDekzYZ::]XEm_e3PWMm02
+R1
+I`@ob6Oo@62e=j388TIQWZ0
+R2
+R3
+w1752345522
+8E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/exponent_axi4_lite_slave.v
+FE:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/exponent_axi4_lite_slave.v
+!i122 102
+L0 1 168
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/exponent_axi4_lite_slave.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/exponent_axi4_lite_slave.v|
+!i113 1
+R6
+R7
+vhammu_ip
+R0
+!i10b 1
+!s100 MciF<7YWfoaG=hQ126U@P1
+R1
+INn_j^CTiHgY1a:9780S:82
+R2
+R3
+w1752351963
+8E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/hammu_ip.v
+FE:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/hammu_ip.v
+!i122 100
+L0 2 62
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/hammu_ip.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/hammu_ip.v|
+!i113 1
+R6
+R7
+vtb_exponent_axi4_lite_slave
+!s110 1752352123
+!i10b 1
+!s100 4`=5>WSiOoP4PHhb`a16R2
+R1
+Ie?_Y@fWH7<JocnYLKP@M^1
+R2
+R3
+w1752346566
+8E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_exponent_axi4_lite_slave.v
+FE:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_exponent_axi4_lite_slave.v
+!i122 90
+L0 1 161
+R4
+r1
+!s85 0
+31
+!s108 1752352123.000000
+!s107 E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_exponent_axi4_lite_slave.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_exponent_axi4_lite_slave.v|
+!i113 1
+R6
+R7
+vtb_hammu_ip
+R0
+!i10b 1
+!s100 Xg9@;>QUn;7]EneKoc6@52
+R1
+ITZhDM[FYJ5O?Qj9JJSUR^1
+R2
+R3
+w1752352209
+8E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v
+FE:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v
+!i122 101
+L0 3 161
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v|
+!i113 1
+R6
+R7

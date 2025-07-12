@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/intelFPGA/20.1
+vexponent
+Z0 !s110 1752340773
+!i10b 1
+!s100 2f51iWC^:L<02_K57=1]N2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I=zXB?[4dGQe^>J3g1mj;R1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dE:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent
+w1752340609
+8E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent/exponent.v
+FE:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent/exponent.v
+!i122 6
+L0 1 73
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1752340773.000000
+!s107 E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent/exponent.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent/exponent.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vtb_exponent
+R0
+!i10b 1
+!s100 1j]@XifChcIZcRcUNTH1o2
+R1
+IMhmJ;YWzOaB@JD9JFeioe0
+R2
+R3
+w1752340769
+8E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent/tb_exponent.v
+FE:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent/tb_exponent.v
+!i122 7
+L0 1 72
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent/tb_exponent.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent/tb_exponent.v|
+!i113 1
+R6
+R7
