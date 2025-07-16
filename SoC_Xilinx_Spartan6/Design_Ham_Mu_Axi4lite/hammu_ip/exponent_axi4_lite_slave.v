@@ -45,7 +45,7 @@ module exponent_axi4_lite_slave (
     
     // Exponent module signals
     wire exp_done;
-    wire [14:0] exp_P;
+    wire [29:0] exp_P;
     
     // AXI4-Lite response signals
     assign S_AXI_BRESP = 2'b00;  // OKAY
@@ -84,7 +84,7 @@ module exponent_axi4_lite_slave (
                 S_AXI_RVALID <= 1;
                 case (captured_araddr)
                     ADDR_P: begin
-                        S_AXI_RDATA <= {17'b0, exp_P};  // Extend to 32-bit
+                        S_AXI_RDATA <= {2'b0, exp_P};  // Extend to 32-bit
                     end
                     ADDR_DONE: begin
                         S_AXI_RDATA <= {31'b0, exp_done};  // Extend to 32-bit

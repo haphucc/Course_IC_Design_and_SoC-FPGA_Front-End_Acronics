@@ -10,23 +10,23 @@ z2
 cModel Technology
 dE:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/axi4lite
 vexponent
-Z0 !s110 1752346569
+Z0 !s110 1752601169
 !i10b 1
-!s100 2f51iWC^:L<02_K57=1]N2
+!s100 jU_FD1CSh`aLMa@`P<8W@1
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I3G<6o1WL>dn0:6b@1<Z8h1
+Ik5bPoKj`[3^;Y:TWE5CDB0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 dE:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent_axi4lite
-w1752340609
+w1752599507
 8E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent_axi4lite/exponent.v
 FE:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent_axi4lite/exponent.v
-!i122 9
+!i122 55
 L0 1 73
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1752346569.000000
+Z5 !s108 1752601169.000000
 !s107 E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent_axi4lite/exponent.v|
 !s90 -reportprogress|300|-work|work|-stats=none|E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent_axi4lite/exponent.v|
 !i113 1
@@ -35,15 +35,15 @@ Z7 tCvgOpt 0
 vexponent_axi4_lite_slave
 R0
 !i10b 1
-!s100 hDekzYZ::]XEm_e3PWMm02
+!s100 k;Q0L2Zc4Dc9zCmIYW?KN2
 R1
-IZCVM@iAA60D9?]THc_>kG1
+I[:A23_>6Y34DH?@B2o7``2
 R2
 R3
-w1752345522
+w1752599564
 8E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent_axi4lite/exponent_axi4_lite_slave.v
 FE:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent_axi4lite/exponent_axi4_lite_slave.v
-!i122 8
+!i122 54
 L0 1 168
 R4
 r1
@@ -81,16 +81,16 @@ R7
 vtb_exponent_axi4_lite_slave
 R0
 !i10b 1
-!s100 4`=5>WSiOoP4PHhb`a16R2
+!s100 kTJSROBN1j]BLJ7@>kWS<2
 R1
-IPFe24hDRRWC5>JUY5BDD<1
+Ibhg2B^MLSMmE[DoVP3Tg91
 R2
 R3
-w1752346566
+w1752601165
 8E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent_axi4lite/tb_exponent_axi4_lite_slave.v
 FE:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent_axi4lite/tb_exponent_axi4_lite_slave.v
-!i122 10
-L0 1 161
+!i122 56
+L0 1 162
 R4
 r1
 !s85 0

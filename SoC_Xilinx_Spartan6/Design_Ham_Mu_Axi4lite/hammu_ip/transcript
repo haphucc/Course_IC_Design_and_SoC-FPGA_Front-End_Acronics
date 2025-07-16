@@ -5,85 +5,33 @@
 # 4 compiles, 0 failed with no errors.
 vsim -gui work.tb_hammu_ip
 # vsim -gui work.tb_hammu_ip 
-# Start time: 03:09:10 on Jul 13,2025
-# Loading work.tb_hammu_ip
-# Loading work.hammu_ip
-# Loading work.exponent_axi4_lite_slave
-# Loading work.exponent
-# ** Error: (vsim-3043) Unresolved reference to 'return'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_hammu_ip File: E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v Line: 137
-# Error loading design
-# End time: 03:09:10 on Jul 13,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 2
-# Compile of exponent.v was successful.
-# Compile of hammu_ip.v was successful.
-# Compile of tb_hammu_ip.v was successful.
-# Compile of exponent_axi4_lite_slave.v was successful.
-# 4 compiles, 0 failed with no errors.
-vsim -gui work.tb_hammu_ip
-# vsim -gui work.tb_hammu_ip 
-# Start time: 03:11:13 on Jul 13,2025
+# Start time: 00:41:30 on Jul 16,2025
 # Loading work.tb_hammu_ip
 # Loading work.hammu_ip
 # Loading work.exponent_axi4_lite_slave
 # Loading work.exponent
 add wave -position end sim:/tb_hammu_ip/*
 run -all
-# === Test HAMMU IP Top Module ===
-# Time | State | X | A | P | Done | Load | Start
-# -----|-------|---|---|---|------|------|------
-#    0 | 000   |  x |  x |   1 | 0    | x    | x
-#    5 | 000   |  0 |  0 |   1 | 0    | 0    | 0
+# === Test AXI4-Lite Exponent Module ===
+# Time: 75000 - AXI Write: Addr=0x7c800000, Data=0x00000009
+# Time: 115000 - AXI Write: Addr=0x7c800004, Data=0x00000008
+# Time: 155000 - AXI Write: Addr=0x7c800008, Data=0x00000001
+# Time: 385000 - AXI Read: Addr=0x7c800010, Data=0x00000001
+# Calculation completed!
+# Time: 425000 - AXI Read: Addr=0x7c80000c, Data=0x0290d741
+# Test Case: 2^3 = 22337 (correct)
 # 
-# === Testing Exponent Calculations ===
-# 
-# --- Test:  2^ 3 =     8 ---
-# Time: 105 - AXI Write: Addr=0x7c800000, Data=0x00000002
-# Time: 145 - AXI Write: Addr=0x7c800004, Data=0x00000003
-# Time: 185 - AXI Write: Addr=0x7c800008, Data=0x00000001
-# Time: 225 - AXI Read: Addr=0x7c800010, Data=0x00000000
-# ✗ FAIL: Calculation not completed (done = 0)
-# 
-# --- Test:  3^ 2 =     9 ---
-# Time: 355 - AXI Write: Addr=0x7c800000, Data=0x00000003
-# Time: 395 - AXI Write: Addr=0x7c800004, Data=0x00000002
-# Time: 435 - AXI Write: Addr=0x7c800008, Data=0x00000001
-# Time: 475 - AXI Read: Addr=0x7c800010, Data=0x00000000
-# ✗ FAIL: Calculation not completed (done = 0)
-# 
-# --- Test:  4^ 2 =    16 ---
-# Time: 605 - AXI Write: Addr=0x7c800000, Data=0x00000004
-# Time: 645 - AXI Write: Addr=0x7c800004, Data=0x00000002
-# Time: 685 - AXI Write: Addr=0x7c800008, Data=0x00000001
-# Time: 725 - AXI Read: Addr=0x7c800010, Data=0x00000000
-# ✗ FAIL: Calculation not completed (done = 0)
-# 
-# --- Test:  2^ 0 =     1 ---
-# Time: 855 - AXI Write: Addr=0x7c800000, Data=0x00000002
-# Time: 895 - AXI Write: Addr=0x7c800004, Data=0x00000000
-# Time: 935 - AXI Write: Addr=0x7c800008, Data=0x00000001
-# Time: 975 - AXI Read: Addr=0x7c800010, Data=0x00000000
-# ✗ FAIL: Calculation not completed (done = 0)
-# 
-# --- Test:  5^ 3 =   125 ---
-# Time: 1105 - AXI Write: Addr=0x7c800000, Data=0x00000005
-# Time: 1145 - AXI Write: Addr=0x7c800004, Data=0x00000003
-# Time: 1185 - AXI Write: Addr=0x7c800008, Data=0x00000001
-# Time: 1225 - AXI Read: Addr=0x7c800010, Data=0x00000000
-# ✗ FAIL: Calculation not completed (done = 0)
-# 
-# === All tests completed ===
-# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v(180)
-#    Time: 1375 ps  Iteration: 0  Instance: /tb_hammu_ip
+# === Test completed ===
+# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v(161)
+#    Time: 425 ns  Iteration: 1  Instance: /tb_hammu_ip
 # 1
-# Break in Module tb_hammu_ip at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v line 180
+# Break in Module tb_hammu_ip at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v line 161
 # Compile of exponent.v was successful.
 # Compile of hammu_ip.v was successful.
 # Compile of tb_hammu_ip.v was successful.
 # Compile of exponent_axi4_lite_slave.v was successful.
 # 4 compiles, 0 failed with no errors.
 restart -f
-# Closing VCD file "tb_hammu_ip.vcd"
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # Loading work.tb_hammu_ip
 # Loading work.hammu_ip
@@ -93,329 +41,20 @@ run -all
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
-# === Test HAMMU IP Top Module ===
+# === Test AXI4-Lite Exponent Module ===
+# Time: 75000 - AXI Write: Addr=0x7c800000, Data=0x00000007
+# Time: 115000 - AXI Write: Addr=0x7c800004, Data=0x00000009
+# Time: 155000 - AXI Write: Addr=0x7c800008, Data=0x00000001
+# Time: 385000 - AXI Read: Addr=0x7c800010, Data=0x00000001
+# Calculation completed!
+# Time: 425000 - AXI Read: Addr=0x7c80000c, Data=0x0267bf47
+# Test Case: Ket qua =   40353607 (correct)
 # 
-# === Testing Exponent Calculations ===
-# 
-# --- Test:  2^ 3 =     8 ---
-# Time: 105 - AXI Write: Addr=0x7c800000, Data=0x00000002
-# Time: 145 - AXI Write: Addr=0x7c800004, Data=0x00000003
-# Time: 185 - AXI Write: Addr=0x7c800008, Data=0x00000001
-# Time: 315 - AXI Read: Addr=0x7c800010, Data=0x00000000
-# ✗ FAIL: Calculation not completed (done = 0)
-# 
-# === All tests completed ===
-# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v(174)
-#    Time: 465 ps  Iteration: 0  Instance: /tb_hammu_ip
+# === Test completed ===
+# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v(162)
+#    Time: 425 ns  Iteration: 1  Instance: /tb_hammu_ip
 # 1
-# Break in Module tb_hammu_ip at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v line 174
-quit -sim
-# End time: 03:17:31 on Jul 13,2025, Elapsed time: 0:06:18
+# Break in Module tb_hammu_ip at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v line 162
+# End time: 00:45:27 on Jul 16,2025, Elapsed time: 0:03:57
 # Errors: 0, Warnings: 1
-# Compile of exponent.v was successful.
-# Compile of hammu_ip.v was successful.
-# Compile of tb_hammu_ip.v was successful.
-# Compile of exponent_axi4_lite_slave.v was successful.
-# 4 compiles, 0 failed with no errors.
-vsim -gui work.tb_hammu_ip
-# vsim -gui work.tb_hammu_ip 
-# Start time: 03:20:34 on Jul 13,2025
-# Loading work.tb_hammu_ip
-# Loading work.hammu_ip
-# Loading work.exponent_axi4_lite_slave
-# Loading work.exponent
-add wave -position end sim:/tb_hammu_ip/*
-run -all
-# 
-# --- TEST:  2^ 3 ---
-# AXI WRITE: Addr = 0x7c800000, Data = 0x00000002
-# AXI WRITE: Addr = 0x7c800004, Data = 0x00000003
-# AXI WRITE: Addr = 0x7c800008, Data = 0x00000001
-# AXI READ : Addr = 0x7c800010, Data = 0x00000001
-# AXI READ : Addr = 0x7c80000c, Data = 0x00000008
-# ✓ PASS:  2^ 3 =     8
-# 
-# --- TEST:  3^ 2 ---
-# AXI WRITE: Addr = 0x7c800000, Data = 0x00000003
-# AXI WRITE: Addr = 0x7c800004, Data = 0x00000002
-# AXI WRITE: Addr = 0x7c800008, Data = 0x00000001
-# AXI READ : Addr = 0x7c800010, Data = 0x00000000
-# ✗ FAIL: Calculation not done.
-# 
-# --- TEST:  4^ 2 ---
-# AXI WRITE: Addr = 0x7c800000, Data = 0x00000004
-# AXI WRITE: Addr = 0x7c800004, Data = 0x00000002
-# AXI WRITE: Addr = 0x7c800008, Data = 0x00000001
-# AXI READ : Addr = 0x7c800010, Data = 0x00000001
-# AXI READ : Addr = 0x7c80000c, Data = 0x00000010
-# ✓ PASS:  4^ 2 =    16
-# 
-# --- TEST:  2^ 0 ---
-# AXI WRITE: Addr = 0x7c800000, Data = 0x00000002
-# AXI WRITE: Addr = 0x7c800004, Data = 0x00000000
-# AXI WRITE: Addr = 0x7c800008, Data = 0x00000001
-# AXI READ : Addr = 0x7c800010, Data = 0x00000000
-# ✗ FAIL: Calculation not done.
-# 
-# === ALL TESTS COMPLETED ===
-# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v(155)
-#    Time: 1515 ns  Iteration: 1  Instance: /tb_hammu_ip
-# 1
-# Break in Module tb_hammu_ip at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v line 155
-quit -sim
-# End time: 03:20:56 on Jul 13,2025, Elapsed time: 0:00:22
-# Errors: 0, Warnings: 2
-# Compile of exponent.v was successful.
-# Compile of hammu_ip.v was successful.
-# Compile of tb_hammu_ip.v was successful.
-# Compile of exponent_axi4_lite_slave.v was successful.
-# Compile of tb_exponent_axi4_lite_slave.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -gui work.tb_exponent_axi4_lite_slave
-# vsim -gui work.tb_exponent_axi4_lite_slave 
-# Start time: 03:21:27 on Jul 13,2025
-# Loading work.tb_exponent_axi4_lite_slave
-# Loading work.exponent_axi4_lite_slave
-# Loading work.exponent
-add wave -position end sim:/tb_exponent_axi4_lite_slave/*
-run -all
-# === Test AXI4-Lite Exponent Module ===
-# Time: 75 - AXI Write: Addr=0x7c800000, Data=0x00000002
-# Time: 115 - AXI Write: Addr=0x7c800004, Data=0x00000003
-# Time: 155 - AXI Write: Addr=0x7c800008, Data=0x00000001
-# Time: 285 - AXI Read: Addr=0x7c800010, Data=0x00000001
-# Calculation completed!
-# Time: 325 - AXI Read: Addr=0x7c80000c, Data=0x00000008
-# Test Case: 2^3 =     8 (correct)
-# 
-# === Test completed ===
-# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_exponent_axi4_lite_slave.v(159)
-#    Time: 325 ps  Iteration: 1  Instance: /tb_exponent_axi4_lite_slave
-# 1
-# Break in Module tb_exponent_axi4_lite_slave at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_exponent_axi4_lite_slave.v line 159
-quit -sim
-# End time: 03:22:56 on Jul 13,2025, Elapsed time: 0:01:29
-# Errors: 0, Warnings: 3
-# Compile of exponent.v was successful.
-# Compile of hammu_ip.v was successful.
-# Compile of tb_hammu_ip.v failed with 2 errors.
-# Compile of exponent_axi4_lite_slave.v was successful.
-# Compile of tb_exponent_axi4_lite_slave.v was successful.
-# 5 compiles, 1 failed with 2 errors.
-# Compile of exponent.v was successful.
-# Compile of hammu_ip.v was successful.
-# Compile of tb_hammu_ip.v was successful.
-# Compile of exponent_axi4_lite_slave.v was successful.
-# Compile of tb_exponent_axi4_lite_slave.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -gui work.tb_hammu_ip
-# vsim -gui work.tb_hammu_ip 
-# Start time: 03:24:21 on Jul 13,2025
-# Loading work.tb_hammu_ip
-# Loading work.hammu_ip
-# Loading work.exponent_axi4_lite_slave
-# Loading work.exponent
-# ** Error: (vsim-3063) Port 'S_AXI_BREADY' not found in the connected module (17th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_hammu_ip/DUT File: E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v Line: 37
-# Error loading design
-# End time: 03:24:21 on Jul 13,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 3
-# Compile of exponent.v was successful.
-# Compile of hammu_ip.v was successful.
-# Compile of tb_hammu_ip.v was successful.
-# Compile of exponent_axi4_lite_slave.v was successful.
-# Compile of tb_exponent_axi4_lite_slave.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -gui work.tb_hammu_ip
-# vsim -gui work.tb_hammu_ip 
-# Start time: 03:25:06 on Jul 13,2025
-# Loading work.tb_hammu_ip
-# Loading work.hammu_ip
-# Loading work.exponent_axi4_lite_slave
-# Loading work.exponent
-# ** Error: (vsim-3063) Port 'S_AXI_BREADY' not found in the connected module (17th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_hammu_ip/DUT File: E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v Line: 37
-# Error loading design
-# End time: 03:25:06 on Jul 13,2025, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 2
-# Compile of exponent.v was successful.
-# Compile of hammu_ip.v was successful.
-# Compile of tb_hammu_ip.v was successful.
-# Compile of exponent_axi4_lite_slave.v was successful.
-# Compile of tb_exponent_axi4_lite_slave.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -gui work.tb_hammu_ip
-# vsim -gui work.tb_hammu_ip 
-# Start time: 03:26:18 on Jul 13,2025
-# Loading work.tb_hammu_ip
-# Loading work.hammu_ip
-# Loading work.exponent_axi4_lite_slave
-# Loading work.exponent
-add wave -position end sim:/tb_hammu_ip/*
-run -all
-# 
-# --- TEST:  2^ 3 ---
-# AXI WRITE: Addr = 0x7c800000, Data = 0x00000002
-# AXI WRITE: Addr = 0x7c800004, Data = 0x00000003
-# AXI WRITE: Addr = 0x7c800008, Data = 0x00000001
-# AXI READ : Addr = 0x7c800010, Data = 0x00000001
-# AXI READ : Addr = 0x7c80000c, Data = 0x00000008
-# ✓ PASS:  2^ 3 =     8
-# 
-# --- TEST:  3^ 2 ---
-# AXI WRITE: Addr = 0x7c800000, Data = 0x00000003
-# AXI WRITE: Addr = 0x7c800004, Data = 0x00000002
-# AXI WRITE: Addr = 0x7c800008, Data = 0x00000001
-# AXI READ : Addr = 0x7c800010, Data = 0x00000000
-# ✗ FAIL: Calculation not done.
-# 
-# --- TEST:  4^ 2 ---
-# AXI WRITE: Addr = 0x7c800000, Data = 0x00000004
-# AXI WRITE: Addr = 0x7c800004, Data = 0x00000002
-# AXI WRITE: Addr = 0x7c800008, Data = 0x00000001
-# AXI READ : Addr = 0x7c800010, Data = 0x00000001
-# AXI READ : Addr = 0x7c80000c, Data = 0x00000010
-# ✓ PASS:  4^ 2 =    16
-# 
-# --- TEST:  2^ 0 ---
-# AXI WRITE: Addr = 0x7c800000, Data = 0x00000002
-# AXI WRITE: Addr = 0x7c800004, Data = 0x00000000
-# AXI WRITE: Addr = 0x7c800008, Data = 0x00000001
-# AXI READ : Addr = 0x7c800010, Data = 0x00000000
-# ✗ FAIL: Calculation not done.
-# 
-# === ALL TESTS COMPLETED ===
-# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v(155)
-#    Time: 1515 ns  Iteration: 1  Instance: /tb_hammu_ip
-# 1
-# Break in Module tb_hammu_ip at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v line 155
-quit -sim
-# End time: 03:27:07 on Jul 13,2025, Elapsed time: 0:00:49
-# Errors: 0, Warnings: 2
-# Compile of exponent.v was successful.
-# Compile of hammu_ip.v was successful.
-# Compile of tb_hammu_ip.v failed with 2 errors.
-# Compile of exponent_axi4_lite_slave.v was successful.
-# Compile of tb_exponent_axi4_lite_slave.v was successful.
-# 5 compiles, 1 failed with 2 errors.
-# Compile of exponent.v was successful.
-# Compile of hammu_ip.v was successful.
-# Compile of tb_hammu_ip.v failed with 3 errors.
-# Compile of exponent_axi4_lite_slave.v was successful.
-# Compile of tb_exponent_axi4_lite_slave.v was successful.
-# 5 compiles, 1 failed with 3 errors.
-# Compile of exponent.v was successful.
-# Compile of hammu_ip.v was successful.
-# Compile of tb_hammu_ip.v was successful.
-# Compile of exponent_axi4_lite_slave.v was successful.
-# Compile of tb_exponent_axi4_lite_slave.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -gui work.tb_hammu_ip
-# vsim -gui work.tb_hammu_ip 
-# Start time: 03:28:49 on Jul 13,2025
-# Loading work.tb_hammu_ip
-# Loading work.hammu_ip
-# Loading work.exponent_axi4_lite_slave
-# Loading work.exponent
-add wave -position end sim:/tb_hammu_ip/*
-run -all
-# === Test AXI4-Lite Exponent Module ===
-# Time: 75000 - AXI Write: Addr=0x7c800000, Data=0x00000002
-# Time: 115000 - AXI Write: Addr=0x7c800004, Data=0x00000003
-# Time: 155000 - AXI Write: Addr=0x7c800008, Data=0x00000001
-# Time: 285000 - AXI Read: Addr=0x7c800010, Data=0x00000001
-# Calculation completed!
-# Time: 325000 - AXI Read: Addr=0x7c80000c, Data=0x00000008
-# Test Case: 2^3 =     8 (correct)
-# 
-# === Test completed ===
-# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v(161)
-#    Time: 325 ns  Iteration: 1  Instance: /tb_hammu_ip
-# 1
-# Break in Module tb_hammu_ip at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v line 161
-# Compile of exponent.v was successful.
-# Compile of hammu_ip.v was successful.
-# Compile of tb_hammu_ip.v was successful.
-# Compile of exponent_axi4_lite_slave.v was successful.
-# 4 compiles, 1 failed with no errors.
-# Compile of exponent.v was successful.
-# Compile of hammu_ip.v was successful.
-# Compile of tb_hammu_ip.v was successful.
-# Compile of exponent_axi4_lite_slave.v was successful.
-# 4 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.tb_hammu_ip
-# Loading work.hammu_ip
-# Loading work.exponent_axi4_lite_slave
-# Loading work.exponent
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# === Test AXI4-Lite Exponent Module ===
-# Time: 75000 - AXI Write: Addr=0x7c800000, Data=0x00000002
-# Time: 115000 - AXI Write: Addr=0x7c800004, Data=0x00000002
-# Time: 155000 - AXI Write: Addr=0x7c800008, Data=0x00000001
-# Time: 285000 - AXI Read: Addr=0x7c800010, Data=0x00000001
-# Calculation completed!
-# Time: 325000 - AXI Read: Addr=0x7c80000c, Data=0x00000004
-# Test Case: 2^3 =     4 (correct)
-# 
-# === Test completed ===
-# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v(161)
-#    Time: 325 ns  Iteration: 1  Instance: /tb_hammu_ip
-# 1
-# Break in Module tb_hammu_ip at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v line 161
-add wave -position end sim:/tb_hammu_ip/DUT/slave_inst/exp_inst/*
-restart -f
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# === Test AXI4-Lite Exponent Module ===
-# Time: 75000 - AXI Write: Addr=0x7c800000, Data=0x00000002
-# Time: 115000 - AXI Write: Addr=0x7c800004, Data=0x00000002
-# Time: 155000 - AXI Write: Addr=0x7c800008, Data=0x00000001
-# Time: 285000 - AXI Read: Addr=0x7c800010, Data=0x00000001
-# Calculation completed!
-# Time: 325000 - AXI Read: Addr=0x7c80000c, Data=0x00000004
-# Test Case: 2^3 =     4 (correct)
-# 
-# === Test completed ===
-# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v(161)
-#    Time: 325 ns  Iteration: 1  Instance: /tb_hammu_ip
-# 1
-# Break in Module tb_hammu_ip at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v line 161
-# Compile of exponent.v was successful.
-# Compile of hammu_ip.v was successful.
-# Compile of tb_hammu_ip.v was successful.
-# Compile of exponent_axi4_lite_slave.v was successful.
-# 4 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.tb_hammu_ip
-# Loading work.hammu_ip
-# Loading work.exponent_axi4_lite_slave
-# Loading work.exponent
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# === Test AXI4-Lite Exponent Module ===
-# Time: 75000 - AXI Write: Addr=0x7c800000, Data=0x00000002
-# Time: 115000 - AXI Write: Addr=0x7c800004, Data=0x00000002
-# Time: 155000 - AXI Write: Addr=0x7c800008, Data=0x00000001
-# Time: 285000 - AXI Read: Addr=0x7c800010, Data=0x00000001
-# Calculation completed!
-# Time: 325000 - AXI Read: Addr=0x7c80000c, Data=0x00000004
-# Test Case: 2^3 =     4 (correct)
-# 
-# === Test completed ===
-# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v(161)
-#    Time: 325 ns  Iteration: 1  Instance: /tb_hammu_ip
-# 1
-# Break in Module tb_hammu_ip at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/tb_hammu_ip.v line 161
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/wave.do
-# End time: 03:46:27 on Jul 13,2025, Elapsed time: 0:17:38
-# Errors: 0, Warnings: 1
+# Closing project E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/hammu_ip/hammu_ip.mpf

@@ -133,28 +133,29 @@ module tb_hammu_ip();
         
         // Test Case 1: 2^3 = 8        
         // Write X = 2
-        axi_write(ADDR_X, 32'd2);
+        axi_write(ADDR_X, 32'd7);
         
         // Write A = 3
-        axi_write(ADDR_A, 32'd2);
+        axi_write(ADDR_A, 32'd9);
         
         // Start calculation
         axi_write(ADDR_START, 32'd1);
         
         // Wait a bit and check if calculation is done
-        #100;
+        #200;
         
         // Read done status
         axi_read(ADDR_DONE, read_data);
-        
+
         if (read_data[0] == 1) begin
             $display("Calculation completed!");
             
             // Read result
             axi_read(ADDR_P, read_data);            
-            $display("Test Case: 2^3 = %d (correct)", read_data[14:0]);
+            $display("Test Case: Ket qua = %d (correct)", read_data[29:0]);
         end else begin
-            $display("✗ FAIL: Calculation not completed");
+			axi_read(ADDR_P, read_data);            
+            $display("Test Fail : Ket qua = %d", read_data[29:0]);
         end
                 
         $display("\n=== Test completed ===");

@@ -12,7 +12,7 @@ module hammu_ip
         parameter C_NUM_REG          = 1,
         parameter C_NUM_MEM          = 1,
         parameter C_SLV_AWIDTH       = 32,
-        parameter C_SLVDWIDTH        = 32
+        parameter C_SLV_DWIDTH        = 32
     )
     (
         input  wire        S_AXI_ACLK,
