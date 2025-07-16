@@ -1,0 +1,242 @@
+$date
+	Tue Jul 15 19:56:21 2025
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module tb_multiplier $end
+$var reg 1 ! tb_clk $end
+$var reg 1 " tb_rst_n $end
+$var reg 1 # tb_load $end
+$var reg 1 $ tb_start $end
+$var reg 4 % tb_A [3:0] $end
+$var reg 4 & tb_B [3:0] $end
+$var wire 1 ' tb_done $end
+$var wire 1 ( tb_P [19] $end
+$var wire 1 ) tb_P [18] $end
+$var wire 1 * tb_P [17] $end
+$var wire 1 + tb_P [16] $end
+$var wire 1 , tb_P [15] $end
+$var wire 1 - tb_P [14] $end
+$var wire 1 . tb_P [13] $end
+$var wire 1 / tb_P [12] $end
+$var wire 1 0 tb_P [11] $end
+$var wire 1 1 tb_P [10] $end
+$var wire 1 2 tb_P [9] $end
+$var wire 1 3 tb_P [8] $end
+$var wire 1 4 tb_P [7] $end
+$var wire 1 5 tb_P [6] $end
+$var wire 1 6 tb_P [5] $end
+$var wire 1 7 tb_P [4] $end
+$var wire 1 8 tb_P [3] $end
+$var wire 1 9 tb_P [2] $end
+$var wire 1 : tb_P [1] $end
+$var wire 1 ; tb_P [0] $end
+
+$scope module uut $end
+$var parameter 3 < IDLE $end
+$var parameter 3 = LOAD $end
+$var parameter 3 > CALC $end
+$var parameter 3 ? FINISH $end
+$var wire 1 @ i_clk $end
+$var wire 1 A i_rst_n $end
+$var wire 1 B i_load $end
+$var wire 1 C i_start $end
+$var wire 1 D i_A [3] $end
+$var wire 1 E i_A [2] $end
+$var wire 1 F i_A [1] $end
+$var wire 1 G i_A [0] $end
+$var wire 1 H i_B [3] $end
+$var wire 1 I i_B [2] $end
+$var wire 1 J i_B [1] $end
+$var wire 1 K i_B [0] $end
+$var reg 1 L o_done $end
+$var reg 20 M o_P [19:0] $end
+$var reg 3 N current_state [2:0] $end
+$var reg 4 O reg_A [3:0] $end
+$var reg 4 P reg_B [3:0] $end
+$var reg 20 Q reg_P [19:0] $end
+$var reg 3 R index_bit_B [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+b0 %
+b0 &
+0L
+b0 M
+b0 N
+b0 O
+b0 P
+b0 Q
+b0 R
+b0 <
+b1 =
+b10 >
+b11 ?
+0'
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0K
+0J
+0I
+0H
+0G
+0F
+0E
+0D
+0C
+0B
+0A
+0@
+$end
+#5000
+1!
+1@
+#10000
+1"
+0!
+1A
+0@
+#15000
+1!
+1@
+#20000
+b10 %
+b11 &
+1#
+0!
+1K
+1J
+1F
+1B
+0@
+#25000
+1!
+1@
+b10 O
+b11 P
+b1 N
+#30000
+0#
+0!
+0B
+0@
+#35000
+1!
+1@
+#40000
+1$
+0!
+1C
+0@
+#45000
+1!
+1@
+b10 N
+#50000
+0$
+0!
+0C
+0@
+#55000
+1!
+1@
+b10 Q
+b100 O
+b1 R
+#60000
+0!
+0@
+#65000
+1!
+1@
+b110 Q
+b1000 O
+b10 R
+#70000
+0!
+0@
+#75000
+1!
+1@
+b0 O
+b11 R
+#80000
+0!
+0@
+#85000
+1!
+1@
+b100 R
+#90000
+0!
+0@
+#95000
+1!
+1@
+b11 N
+b0 R
+#100000
+0!
+0@
+#105000
+1!
+1@
+1L
+b110 M
+1'
+1:
+19
+1$
+1C
+#110000
+0!
+0@
+#115000
+1!
+1@
+b0 N
+#120000
+0!
+0@
+#125000
+1!
+1@
+b0 P
+b0 Q
+0L
+b0 M
+0'
+0:
+09
+#130000
+0!
+0@
