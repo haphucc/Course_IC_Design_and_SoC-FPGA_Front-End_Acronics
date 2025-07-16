@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_0</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_1</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_2</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_3</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_4</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_5</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_6</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_7</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_8</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_9</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_10</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_11</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_12</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_13</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_14</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_15</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_16</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_17</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_18</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_19</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_20</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_21</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_22</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_23</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_24</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_25</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_26</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_27</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_28</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_29</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_30</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="0" delta="new" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_31</arg>&apos; of type <arg fmt="%s" index="2">RAMB16BWER</arg> has been changed from &apos;<arg fmt="%s" index="3">SPARTAN3ADSP</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="135" delta="new" >Constraint <arg fmt="%s" index="1">&lt;INST /system/EXPANDED/system/axi4lite_0/axi4lite_0\/si_converter_bank\/gen_conv_slot[0].clock_conv_inst\/interconnect_aresetn_resync&lt;2&gt;_inv1_INV_0 TNM = FFS:axi4lite_0_reset_resync&gt;</arg>: No instances of type <arg fmt="%s" index="2">FFS</arg> were found under block &quot;<arg fmt="%s" index="3">axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/interconnect_aresetn_resync&lt;2&gt;_inv1_INV_0</arg>&quot; (type=<arg fmt="%s" index="4">INV</arg>).
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="58" delta="new" >Constraint <arg fmt="%s" index="1">&lt;TIMEGRP axi4lite_0_reset_source = FFS PADS CPUS;&gt;</arg>: <arg fmt="%s" index="2">CPUS &quot;*&quot;</arg> does not match any design objects.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="194" delta="new" >The <arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">axi4lite_0_reset_resync</arg>&apos;, does not directly or indirectly drive any flip-flops, latches and/or RAMs and is not actively used by any referencing constraint.
+ </msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sys_clk_pin</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sys_clk_pin</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = PERIOD &quot;clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0&quot; TS_sys_clk_pin * 0.375 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.Gen_Bits[27].MEM_EX_Result_Inst</arg>&apos; has unconnected output pin
+</msg>
+
+</messages>
+

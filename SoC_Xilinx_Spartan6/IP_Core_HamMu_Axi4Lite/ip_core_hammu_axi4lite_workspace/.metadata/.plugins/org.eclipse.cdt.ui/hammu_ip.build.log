@@ -1,0 +1,34 @@
+19:43:58 **** Auto Build of configuration Debug for project hammu_ip ****
+make all 
+'Building file: ../src/hammu_ip.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hammu_ip_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/hammu_ip.d" -MT"src/hammu_ip.d" -o "src/hammu_ip.o" "../src/hammu_ip.c"
+'Finished building: ../src/hammu_ip.c'
+' '
+'Building target: hammu_ip.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hammu_ip_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hammu_ip.elf"  ./src/hammu_ip.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hammu_ip.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hammu_ip.elf  |tee "hammu_ip.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6658	    272	   2038	   8968	   2308	hammu_ip.elf
+'Finished building: hammu_ip.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hammu_ip.elf -hw ../../IP_Core_HamMu_Axi4Lite_hw_platform/system.xml -pe microblaze_0  |tee "hammu_ip.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../IP_Core_HamMu_Axi4Lite_hw_platform/system.xml
+-pe microblaze_0 hammu_ip.elf 
+
+ELF file	: hammu_ip.elf
+elfcheck passed.
+'Finished building: hammu_ip.elf.elfcheck'
+' '
+
+19:44:00 Build Finished (took 2s.117ms)
+

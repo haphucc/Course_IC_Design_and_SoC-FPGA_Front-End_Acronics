@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="E:\KhoaHoc_TKVM_Acronics\SoC_Xilinx_Spartan6\IP_Core_HamMu_Axi4Lite\SDK\SDK_Export\hw\system.bit" key="IP_Core_HamMu_Axi4Lite_hw_platform-bitFile"/>
+	<item value="E:\KhoaHoc_TKVM_Acronics\SoC_Xilinx_Spartan6\IP_Core_HamMu_Axi4Lite\ip_core_hammu_axi4lite_workspace\hammu_ip\Debug\hammu_ip.elf" key="IP_Core_HamMu_Axi4Lite_hw_platform-microblaze_0-initElf"/>
+	<item value="E:\KhoaHoc_TKVM_Acronics\SoC_Xilinx_Spartan6\IP_Core_HamMu_Axi4Lite\SDK\SDK_Export\hw\system_bd.bmm" key="IP_Core_HamMu_Axi4Lite_hw_platform-bmmFile"/>
+</section>
