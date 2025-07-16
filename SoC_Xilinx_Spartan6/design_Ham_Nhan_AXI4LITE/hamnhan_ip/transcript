@@ -1,0 +1,35 @@
+# Compile of hamnhan_ip.v was successful.
+# Compile of multiplier.v was successful.
+# Compile of multiplier_axi4_lite_slave.v was successful.
+# Compile of tb_hamnhan_ip.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.tb_hamnhan_ip
+# vsim -gui work.tb_hamnhan_ip 
+# Start time: 00:53:53 on Jul 16,2025
+# Loading work.tb_hamnhan_ip
+# Loading work.hamnhan_ip
+# Loading work.multiplier_axi4_lite_slave
+# Loading work.multiplier
+add wave -position end sim:/tb_hamnhan_ip/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: HaPhuc  Hostname: HAPHUC  ProcessID: 5028
+#           Attempting to use alternate WLF file "./wlftw2f6wc".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftw2f6wc
+run -all
+# === Test AXI4-Lite Exponent Module ===
+# Time: 75000 - AXI Write: Addr=0x7c800000, Data=0x0000000f
+# Time: 115000 - AXI Write: Addr=0x7c800004, Data=0x0000000f
+# Time: 155000 - AXI Write: Addr=0x7c800008, Data=0x00000001
+# Time: 385000 - AXI Read: Addr=0x7c800010, Data=0x00000001
+# Calculation completed!
+# Time: 425000 - AXI Read: Addr=0x7c80000c, Data=0x000000e1
+# Test Case: Ket qua = 225 (correct)
+# 
+# === Test completed ===
+# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Nhan_AXI4LITE/hamnhan_ip/tb_hamnhan_ip.v(162)
+#    Time: 425 ns  Iteration: 1  Instance: /tb_hamnhan_ip
+# 1
+# Break in Module tb_hamnhan_ip at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Nhan_AXI4LITE/hamnhan_ip/tb_hamnhan_ip.v line 162
+# End time: 01:11:58 on Jul 16,2025, Elapsed time: 0:18:05
+# Errors: 0, Warnings: 4
