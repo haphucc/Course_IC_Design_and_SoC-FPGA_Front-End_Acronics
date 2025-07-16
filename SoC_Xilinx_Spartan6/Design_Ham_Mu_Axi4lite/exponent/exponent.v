@@ -8,22 +8,22 @@ module exponent (
     input wire i_load, i_start;
     input [3:0] i_X, i_A;
     output reg o_done;
-    output reg [14:0] o_P;
+    output reg [29:0] o_P;
 		
     parameter IDLE = 3'b000, LOAD = 3'b001, CALC = 3'b010, FINISH = 3'b011;
 
     reg [2:0] current_state;
     reg [3:0] reg_A, reg_X;
-    reg [14:0] reg_P;	
+    reg [29:0] reg_P;	
     reg [3:0] counter;
 	
     always @(posedge i_clk or negedge i_rst_n) begin
         if (!i_rst_n) begin
             reg_X <= 4'b0;				
             reg_A <= 4'b0;
-            reg_P <= 15'b1;
+            reg_P <= 29'b1;
             o_done <= 0;
-            o_P <= 15'b1;
+            o_P <= 29'b1;
             counter <= 4'b0;
             current_state <= IDLE;
 		end
@@ -32,9 +32,9 @@ module exponent (
                 IDLE: begin
                     reg_A <= 4'b0;
                     reg_X <= 4'b0;
-                    reg_P <= 15'b1;
+                    reg_P <= 29'b1;
                     o_done <= 0;
-					o_P <= 15'b0;
+					o_P <= 29'b1;
                     counter <= 4'b0;
 					if (i_load) begin 
 						reg_X <= i_X;  						

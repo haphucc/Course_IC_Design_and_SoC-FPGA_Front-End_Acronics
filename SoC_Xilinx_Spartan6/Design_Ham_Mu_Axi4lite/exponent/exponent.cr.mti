@@ -5,7 +5,7 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	exponent
 
-} {} {}} E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent/tb_exponent.v {1 {vlog -work work -stats=none E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent/tb_exponent.v
+} {} {}} E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_Ham_Mu_AXI4LITE/exponent/tb_exponent.v {1 {vlog -work work -stats=none {E:\KhoaHoc_TKVM_Acronics\SoC_Xilinx_Spartan6\design_Ham_Mu_AXI4LITE\exponent\tb_exponent.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module tb_exponent
 

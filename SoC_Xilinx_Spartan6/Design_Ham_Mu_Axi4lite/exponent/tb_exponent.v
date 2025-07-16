@@ -4,7 +4,7 @@ module tb_exponent();
     reg i_load, i_start;
     reg [3:0] i_X, i_A;
     wire o_done;
-    wire [14:0] o_P;
+    wire [29:0] o_P;
     
     // Instantiate module exponent
     exponent DUT (
@@ -32,7 +32,6 @@ module tb_exponent();
         i_A = 0;
         
         $display("=== Bắt đầu test module exponent ===");
-        $display("Test case: X=2, A=3 (tính 2^3 = 8)");
         
         // Reset hệ thống
         #10;
@@ -40,8 +39,8 @@ module tb_exponent();
         #10;
         
         // Load giá trị X=2, A=3
-        i_X = 4'd2;
-        i_A = 4'd3;
+        i_X = 4'd9;
+        i_A = 4'd9;
         i_load = 1;
         #10;
         i_load = 0;
