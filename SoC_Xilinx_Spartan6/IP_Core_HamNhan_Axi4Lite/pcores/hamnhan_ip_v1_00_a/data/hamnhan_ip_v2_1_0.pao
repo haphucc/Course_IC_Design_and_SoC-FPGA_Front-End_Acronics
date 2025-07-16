@@ -1,0 +1,12 @@
+##############################################################################
+## Filename:          E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/IP_Core_HamNhan_Axi4Lite/pcores/hamnhan_ip_v1_00_a/data/hamnhan_ip_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Tue Jul 15 20:49:53 2025 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+
+lib hamnhan_ip_v1_00_a hamnhan_ip verilog
+lib hamnhan_ip_v1_00_a multiplier_axi4_lite_slave verilog
+lib hamnhan_ip_v1_00_a multiplier verilog

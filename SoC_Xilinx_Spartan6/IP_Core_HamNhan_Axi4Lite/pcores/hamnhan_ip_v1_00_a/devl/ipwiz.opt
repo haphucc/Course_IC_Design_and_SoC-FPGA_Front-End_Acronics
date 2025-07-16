@@ -1,0 +1,9 @@
+-batch 
+-create hamnhan_ip 
+-ver 1.00.a 
+-dir "E:\KhoaHoc_TKVM_Acronics\SoC_Xilinx_Spartan6\IP_Core_HamNhan_Axi4Lite" 
+-lang vhdl 
+-bus axi4lite s 
+-reg 1 
+-xps 
+-driver 
