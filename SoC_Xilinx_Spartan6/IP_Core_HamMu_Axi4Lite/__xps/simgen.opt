@@ -1,1 +1,0 @@
- -p spartan6 -lang verilog$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -msg __xps/ise/xmsgprops.lst -s isim -X E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/IP_Core_HamMu_Axi4Lite/

@@ -1,6 +1,0 @@
-02:12:36 **** Auto Build of project hammu_ip_bsp ****
-make -k all 
-'Finished building libraries'
-
-02:12:37 Build Finished (took 672ms)
-
