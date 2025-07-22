@@ -8,4 +8,4 @@
 # ------------------------------------------------------------
 
 ### Board FPGA Xilinx Spartan SP605
-### Phần mềm nạp code xuống board dùng Xilinx ISE 14.7
+### Phần mềm nạp code xuống board dùng Xilinx Platform Studio 14.7
