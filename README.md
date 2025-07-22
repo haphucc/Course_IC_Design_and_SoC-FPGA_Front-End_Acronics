@@ -1,4 +1,4 @@
-# Course_IC_Design_and_SoC-FPGA_Front-End_Acronics
+## Course IC Design & SoC-FPGA Front-End Acronics
 
 ### Phần mềm mô phỏng dùng ModelSim - Intel FPGA vsim 2020.1
 
