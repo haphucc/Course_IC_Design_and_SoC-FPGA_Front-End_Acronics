@@ -33,7 +33,7 @@ int main() {
 
         // Chọn phép toán
         xil_printf("\r\nChon phep toan:\r\n");
-        xil_printf("0: Nhan (A * B)\r\n");
+        xil_printf("0: Nhan (A*B)\r\n");
         xil_printf("1: Luy thua (A^B)\r\n");
         select = get_input("Select", 1);
 
@@ -43,9 +43,9 @@ int main() {
 
         // Hiển thị kết quả
         if (select == 1) {
-            xil_printf("Ket qua: %d^%d = %d\r\n", a, b, result);
+            xil_printf("\r\nKet qua: %d^%d = %d\r\n", a, b, result);
         } else {
-            xil_printf("Ket qua: %d * %d = %d\r\n", a, b, result);
+            xil_printf("\r\nKet qua: %d*%d = %d\r\n", a, b, result);
         }
 
         // Reset start signal
@@ -72,12 +72,12 @@ int get_input(const char* label, int max_val) {
         } else if (c >= '0' && c <= '9') {
             if (index < sizeof(buffer) - 1) {
                 buffer[index++] = c;
-                xil_printf("%c", c);  // echo
+                xil_printf("%c", c);
             }
-        } else if (c == '\b' || c == 127) {  // Backspace
+        } else if (c == '\b' || c == 127) {
             if (index > 0) {
                 index--;
-                xil_printf("\b \b");  // Xóa ký tự trên terminal
+                xil_printf("\b \b");
             }
         } else {
             xil_printf("\r\nKy tu khong hop le. Nhap lai: ");
@@ -121,26 +121,26 @@ void write_input_to_ip(u32 a, u32 b, u32 select) {
 // === Đợi done và đọc kết quả ===
 u32 wait_done_and_get_result() {
     u32 done;
-    u32 timeout = 1000000;  // Timeout counter để tránh treo
+//    u32 timeout = 1000000;
 
     xil_printf("Dang tinh toan...\r\n");
 
     do {
         done = Xil_In32(ADDR_DONE);
-        timeout--;
-        if (timeout == 0) {
-            xil_printf("Timeout! IP khong phan hoi.\r\n");
-            return 0;
-        }
+//        timeout--;
+//        if (timeout == 0) {
+//            xil_printf("Timeout! IP khong phan hoi.\r\n");
+//            return 0;
+//        }
     } while ((done & 0x1) == 0);
 
     xil_printf("Tinh toan hoan tat!\r\n");
     return Xil_In32(ADDR_P);
 }
 
-// === Hàm delay đơn giản ===
+// === Hàm delay ===
 void Delay(int delay) {
-    volatile int i = delay;  // volatile để tránh compiler optimization
+    volatile int i = delay;
     while(i > 0) {
         i--;
     }
