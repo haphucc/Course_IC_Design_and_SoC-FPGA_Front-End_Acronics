@@ -1,0 +1,29 @@
+E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_HamMu_HamNhan_AXI4LITE/hammu_hamnhan_ip/hammu_hamnhan_ip.v {1 {vlog -work work -stats=none E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_HamMu_HamNhan_AXI4LITE/hammu_hamnhan_ip/hammu_hamnhan_ip.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module hammu_hamnhan_ip
+
+Top level modules:
+	hammu_hamnhan_ip
+
+} {} {}} E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_HamMu_HamNhan_AXI4LITE/hammu_hamnhan_ip/tb_hammu_hamnhan_ip.v {1 {vlog -work work -stats=none E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_HamMu_HamNhan_AXI4LITE/hammu_hamnhan_ip/tb_hammu_hamnhan_ip.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_hammu_hamnhan_ip
+
+Top level modules:
+	tb_hammu_hamnhan_ip
+
+} {} {}} E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_HamMu_HamNhan_AXI4LITE/hammu_hamnhan_ip/exponent_multiplier_axi4_lite_slave.v {1 {vlog -work work -stats=none E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_HamMu_HamNhan_AXI4LITE/hammu_hamnhan_ip/exponent_multiplier_axi4_lite_slave.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module exponent_multiplier_axi4_lite_slave
+
+Top level modules:
+	exponent_multiplier_axi4_lite_slave
+
+} {} {}} E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_HamMu_HamNhan_AXI4LITE/hammu_hamnhan_ip/exponent_multiplier.v {1 {vlog -work work -stats=none E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_HamMu_HamNhan_AXI4LITE/hammu_hamnhan_ip/exponent_multiplier.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module exponent_multiplier
+
+Top level modules:
+	exponent_multiplier
+
+} {} {}}

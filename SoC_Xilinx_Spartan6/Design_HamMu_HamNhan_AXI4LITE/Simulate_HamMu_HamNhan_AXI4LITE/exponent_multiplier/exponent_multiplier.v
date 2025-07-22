@@ -1,0 +1,122 @@
+module exponent_multiplier (
+    i_clk, i_rst_n,
+    i_load, i_start, i_select,
+    i_A, i_B,
+    o_done, o_P
+);
+    input wire i_clk, i_rst_n;
+    input wire i_load, i_start, i_select;
+    input [3:0] i_A, i_B;
+    output reg o_done;
+    output reg [29:0] o_P;
+    
+    parameter IDLE = 3'b000, LOAD = 3'b001, CALC = 3'b010, FINISH = 3'b011;
+    
+    reg [2:0] current_state;
+    reg [3:0] reg_A, reg_B;
+    reg [19:0] reg_A_shift;
+	
+    reg [29:0] reg_P_exp;
+    reg [7:0] reg_P_mul;
+	
+    reg [3:0] counter_exp;
+    reg [2:0] index_bit_B;
+	
+    reg exp_done, mul_done;
+    
+    always @(posedge i_clk or negedge i_rst_n) begin
+        if (!i_rst_n) begin
+            reg_A <= 4'b0;
+            reg_B <= 4'b0;
+            reg_P_exp <= 30'b1;
+            reg_P_mul <= 8'b0;
+            reg_A_shift <= 20'b0;
+            o_done <= 0;
+            o_P <= 30'b0;
+            counter_exp <= 4'b0;
+            index_bit_B <= 3'b0;
+            exp_done <= 0;
+            mul_done <= 0;
+            current_state <= IDLE;
+        end
+        else begin
+            case (current_state)
+                IDLE: begin
+                    reg_A <= 4'b0;
+                    reg_B <= 4'b0;
+                    reg_P_exp <= 30'b1;
+                    reg_P_mul <= 8'b0;
+                    reg_A_shift <= 20'b0;
+                    o_done <= 0;
+                    o_P <= 30'b0;
+                    counter_exp <= 4'b0;
+                    index_bit_B <= 3'b0;
+                    exp_done <= 0;
+                    mul_done <= 0;
+                    
+                    if (i_load) begin 
+                        reg_A <= i_A;
+                        reg_B <= i_B;
+                        reg_A_shift <= {16'b0, i_A};
+                        current_state <= LOAD;
+                    end                    
+                end    
+                
+                LOAD: begin                    
+                    current_state <= (i_start) ? CALC : LOAD;
+                end
+                
+                CALC: begin
+                    if (!i_start) begin
+                        // Tính toán hàm mũ: P = A^B
+                        if (!exp_done) begin
+                            if (counter_exp < reg_B) begin
+                                reg_P_exp <= reg_P_exp * reg_A;
+                                counter_exp <= counter_exp + 1;
+                            end
+                            else begin
+                                exp_done <= 1;
+                            end
+                        end
+                        
+                        // Tính toán hàm nhân: P = A*B (thuật toán shift-and-add)
+                        if (!mul_done) begin
+                            if (index_bit_B < 4) begin
+                                if (reg_B[index_bit_B]) begin
+                                    reg_P_mul <= reg_P_mul + reg_A_shift[7:0];
+                                end
+                                reg_A_shift <= reg_A_shift << 1;
+                                index_bit_B <= index_bit_B + 1;
+                            end
+                            else begin
+                                mul_done <= 1;
+                            end
+                        end
+                        
+                        // Chuyển sang FINISH khi cả hai phép tính hoàn thành
+                        if (exp_done && mul_done) begin
+                            current_state <= FINISH;
+                        end
+                    end
+                end
+                
+                FINISH: begin
+                    o_done <= 1;
+                    
+                    // i_select = 1: chọn kết quả hàm mũ
+                    if (i_select) begin
+                        o_P <= reg_P_exp;
+                    end
+                    // i_select = 0: chọn kết quả hàm nhân
+                    else if (!i_select) begin
+                        o_P <= {22'b0, reg_P_mul};
+                    end
+                    
+                    if (i_start) begin
+                        current_state <= IDLE;
+                    end
+                end
+            endcase
+        end
+    end
+endmodule

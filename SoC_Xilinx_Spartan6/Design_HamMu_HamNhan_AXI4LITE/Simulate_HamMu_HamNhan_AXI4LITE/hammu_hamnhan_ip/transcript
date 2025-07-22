@@ -1,0 +1,42 @@
+# Compile of exponent_multiplier.v was successful.
+# Compile of exponent_multiplier_axi4_lite_slave.v was successful.
+# Compile of hammu_hamnhan_ip.v was successful.
+# Compile of tb_hammu_hamnhan_ip.v was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of exponent_multiplier.v was successful.
+# Compile of exponent_multiplier_axi4_lite_slave.v was successful.
+# Compile of hammu_hamnhan_ip.v was successful.
+# Compile of tb_hammu_hamnhan_ip.v was successful.
+# 4 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of exponent_multiplier.v was successful.
+# Compile of exponent_multiplier_axi4_lite_slave.v was successful.
+# Compile of hammu_hamnhan_ip.v was successful.
+# Compile of tb_hammu_hamnhan_ip.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.tb_hammu_hamnhan_ip
+# vsim -gui work.tb_hammu_hamnhan_ip 
+# Start time: 18:49:13 on Jul 19,2025
+# Loading work.tb_hammu_hamnhan_ip
+# Loading work.hammu_hamnhan_ip
+# Loading work.exponent_multiplier_axi4_lite_slave
+# Loading work.exponent_multiplier
+add wave -position end sim:/tb_hammu_hamnhan_ip/*
+run -all
+# === Test AXI4-Lite Exponent Module ===
+# Time: 75 - AXI Write: Addr=0x7c800000, Data=0x00000002
+# Time: 115 - AXI Write: Addr=0x7c800004, Data=0x00000003
+# Time: 155 - AXI Write: Addr=0x7c800008, Data=0x00000000
+# Time: 195 - AXI Write: Addr=0x7c80000c, Data=0x00000001
+# Time: 425 - AXI Read: Addr=0x7c800014, Data=0x00000001
+# Calculation completed!
+# Time: 465 - AXI Read: Addr=0x7c800010, Data=0x00000006
+# Test Case: Ket qua =          6 (correct)
+# 
+# === Test completed ===
+# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_HamMu_HamNhan_AXI4LITE/hammu_hamnhan_ip/tb_hammu_hamnhan_ip.v(164)
+#    Time: 465 ps  Iteration: 1  Instance: /tb_hammu_hamnhan_ip
+# 1
+# Break in Module tb_hammu_hamnhan_ip at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_HamMu_HamNhan_AXI4LITE/hammu_hamnhan_ip/tb_hammu_hamnhan_ip.v line 164
+# End time: 18:49:34 on Jul 19,2025, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 8

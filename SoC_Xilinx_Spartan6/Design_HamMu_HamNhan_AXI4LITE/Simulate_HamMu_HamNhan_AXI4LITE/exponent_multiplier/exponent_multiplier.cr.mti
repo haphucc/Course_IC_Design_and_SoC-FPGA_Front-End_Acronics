@@ -1,0 +1,15 @@
+E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_HamMu_HamNhan_AXI4LITE/exponent_multiplier/tb_exponent_multiplier.v {1 {vlog -work work -stats=none E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_HamMu_HamNhan_AXI4LITE/exponent_multiplier/tb_exponent_multiplier.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_exponent_multiplier
+
+Top level modules:
+	tb_exponent_multiplier
+
+} {} {}} E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_HamMu_HamNhan_AXI4LITE/exponent_multiplier/exponent_multiplier.v {1 {vlog -work work -stats=none E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_HamMu_HamNhan_AXI4LITE/exponent_multiplier/exponent_multiplier.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module exponent_multiplier
+
+Top level modules:
+	exponent_multiplier
+
+} {} {}}

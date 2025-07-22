@@ -1,0 +1,4 @@
+13:07:47.188 INFO  - Processing command line option -hwspec E:\KhoaHoc_TKVM_Acronics\SoC_Xilinx_Spartan6\IP_Core_HamMuHamNhan_Axi4Lite\SDK\SDK_Export\hw\system.xml. 
+18:01:55.000 INFO  - Processing command line option -hwspec E:\KhoaHoc_TKVM_Acronics\SoC_Xilinx_Spartan6\IP_Core_HamMuHamNhan_Axi4Lite\SDK\SDK_Export\hw\system.xml. 
+18:05:56.909 INFO  - FPGA configured successfully with bitstream "E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/IP_Core_HamMuHamNhan_Axi4Lite/ip_core_hammu_hamnhan_axi4lite_workspace/IP_Core_HamMuHamNhan_Axi4Lite_hw_platform/download.bit" 
+18:07:04.383 INFO  - FPGA configured successfully with bitstream "E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/IP_Core_HamMuHamNhan_Axi4Lite/ip_core_hammu_hamnhan_axi4lite_workspace/IP_Core_HamMuHamNhan_Axi4Lite_hw_platform/download.bit" 
