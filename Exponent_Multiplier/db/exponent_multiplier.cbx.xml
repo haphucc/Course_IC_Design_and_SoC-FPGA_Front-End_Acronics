@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="exponent_multiplier">
+		<CBX_INST_ENTRY INSTANCE_NAME="|exponent_multiplier|lpm_divide:Div3" CBX_FILE_NAME="lpm_divide_1jm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|exponent_multiplier|lpm_divide:Mod2" CBX_FILE_NAME="lpm_divide_1bm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|exponent_multiplier|lpm_divide:Div2" CBX_FILE_NAME="lpm_divide_uim.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|exponent_multiplier|lpm_divide:Div4" CBX_FILE_NAME="lpm_divide_bkm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|exponent_multiplier|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_i9m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|exponent_multiplier|lpm_divide:Mod3" CBX_FILE_NAME="lpm_divide_1bm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|exponent_multiplier|lpm_divide:Mod5" CBX_FILE_NAME="lpm_divide_1bm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|exponent_multiplier|lpm_mult:Mult0" CBX_FILE_NAME="mult_hbt.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|exponent_multiplier|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_i9m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|exponent_multiplier|lpm_divide:Mod4" CBX_FILE_NAME="lpm_divide_1bm.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
