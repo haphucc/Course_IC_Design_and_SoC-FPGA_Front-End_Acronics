@@ -1,0 +1,621 @@
+# Compile of quadratic_sequence.v was successful.
+# Compile of tb_quadratic_sequence.v was successful.
+# Compile of ptb2_axi4_lite_slave.v was successful.
+# Compile of tb_ptb2_axi4_lite_slave.v failed with 1 errors.
+# 4 compiles, 1 failed with 1 error.
+# Compile of quadratic_sequence.v was successful.
+# Compile of tb_quadratic_sequence.v was successful.
+# Compile of ptb2_axi4_lite_slave.v was successful.
+# Compile of tb_ptb2_axi4_lite_slave.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.tb_ptb2_axi4_lite_slave
+# vsim -gui work.tb_ptb2_axi4_lite_slave 
+# Start time: 18:23:13 on Aug 05,2025
+# Loading work.tb_ptb2_axi4_lite_slave
+# Loading work.ptb2_axi4_lite_slave
+# Loading work.quadratic_sequence
+add wave -position end sim:/tb_ptb2_axi4_lite_slave/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: HaPhuc  Hostname: HAPHUC  ProcessID: 356
+#           Attempting to use alternate WLF file "./wlftff9s79".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftff9s79
+add wave -position end sim:/tb_ptb2_axi4_lite_slave/DUT/quad_inst/*
+run -all
+# === Test AXI4-Lite PTB2 Module ===
+# Time: 75 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 115 - AXI Write: Addr=0x79c00004, Data=2 (binary: 00010)
+# Time: 155 - AXI Write: Addr=0x79c00008, Data=1 (binary: 00001)
+# Time: 235 - AXI Read: Addr=0x79c00010, Data=0x010
+# Ket qua o_Result = 10 
+# Read x1
+# Time: 305 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 345 - AXI Read: Addr=0x79c00014, Data=-1 (binary: 1111)
+# Read x2
+# Time: 425 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 465 - AXI Read: Addr=0x79c00014, Data=-1 (binary: 1111)
+# 
+# === Test completed ===
+# Time: 545 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 585 - AXI Write: Addr=0x79c00004, Data=1 (binary: 00001)
+# Time: 625 - AXI Write: Addr=0x79c00008, Data=-6 (binary: 11010)
+# Time: 705 - AXI Read: Addr=0x79c00010, Data=0x011
+# Ket qua o_Result = 11 
+# Read x1
+# Time: 775 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 815 - AXI Read: Addr=0x79c00014, Data=2 (binary: 0010)
+# Read x2
+# Time: 895 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 935 - AXI Read: Addr=0x79c00014, Data=-3 (binary: 1101)
+# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v(194)
+#    Time: 985 ps  Iteration: 0  Instance: /tb_ptb2_axi4_lite_slave
+# 1
+# Break in Module tb_ptb2_axi4_lite_slave at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v line 194
+# Compile of quadratic_sequence.v was successful.
+# Compile of tb_quadratic_sequence.v was successful.
+# Compile of ptb2_axi4_lite_slave.v was successful.
+# Compile of tb_ptb2_axi4_lite_slave.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_ptb2_axi4_lite_slave
+# Loading work.ptb2_axi4_lite_slave
+# Loading work.quadratic_sequence
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# === Test AXI4-Lite PTB2 Module ===
+# Time: 75 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 115 - AXI Write: Addr=0x79c00004, Data=2 (binary: 00010)
+# Time: 155 - AXI Write: Addr=0x79c00008, Data=1 (binary: 00001)
+# Time: 235 - AXI Read: Addr=0x79c00010, Data=0x010
+# Ket qua o_Result = 10 
+# Read x1
+# Time: 305 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 345 - AXI Read: Addr=0x79c00014, Data=-1 (binary: 1111)
+# Read x2
+# Time: 425 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 465 - AXI Read: Addr=0x79c00014, Data=-1 (binary: 1111)
+# 
+# === Test completed ===
+# Time: 545 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 585 - AXI Write: Addr=0x79c00004, Data=1 (binary: 00001)
+# Time: 625 - AXI Write: Addr=0x79c00008, Data=-6 (binary: 11010)
+# Time: 705 - AXI Read: Addr=0x79c00010, Data=0x011
+# Ket qua o_Result = 11 
+# Read x1
+# Time: 775 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 815 - AXI Read: Addr=0x79c00014, Data=2 (binary: 0010)
+# Read x2
+# Time: 895 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 935 - AXI Read: Addr=0x79c00014, Data=-3 (binary: 1101)
+# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v(194)
+#    Time: 985 ps  Iteration: 0  Instance: /tb_ptb2_axi4_lite_slave
+# 1
+# Break in Module tb_ptb2_axi4_lite_slave at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v line 194
+# Compile of quadratic_sequence.v was successful.
+# Compile of tb_quadratic_sequence.v was successful.
+# Compile of ptb2_axi4_lite_slave.v was successful.
+# Compile of tb_ptb2_axi4_lite_slave.v was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of quadratic_sequence.v was successful.
+# Compile of tb_quadratic_sequence.v was successful.
+# Compile of ptb2_axi4_lite_slave.v was successful.
+# Compile of tb_ptb2_axi4_lite_slave.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_ptb2_axi4_lite_slave
+# Loading work.ptb2_axi4_lite_slave
+# Loading work.quadratic_sequence
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# === Test AXI4-Lite PTB2 Module ===
+# Time: 75 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 115 - AXI Write: Addr=0x79c00004, Data=2 (binary: 00010)
+# Time: 155 - AXI Write: Addr=0x79c00008, Data=1 (binary: 00001)
+# Time: 235 - AXI Read: Addr=0x79c00010, Data=0x010
+# Ket qua o_Result = 10 
+# Read x1
+# Time: 305 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 345 - AXI Read: Addr=0x79c00014, Data=-1 (binary: 1111)
+# Read x2
+# Time: 425 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 465 - AXI Read: Addr=0x79c00014, Data=-1 (binary: 1111)
+# 
+# === Test completed ===
+# Time: 545 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 585 - AXI Write: Addr=0x79c00004, Data=1 (binary: 00001)
+# Time: 625 - AXI Write: Addr=0x79c00008, Data=-6 (binary: 11010)
+# Time: 705 - AXI Read: Addr=0x79c00010, Data=0x011
+# Ket qua o_Result = 11 
+# Read x1
+# Time: 775 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 815 - AXI Read: Addr=0x79c00014, Data=2 (binary: 0010)
+# Read x2
+# Time: 895 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 935 - AXI Read: Addr=0x79c00014, Data=-3 (binary: 1101)
+# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v(194)
+#    Time: 985 ps  Iteration: 0  Instance: /tb_ptb2_axi4_lite_slave
+# 1
+# Break in Module tb_ptb2_axi4_lite_slave at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v line 194
+# Compile of quadratic_sequence.v was successful.
+# Compile of tb_quadratic_sequence.v was successful.
+# Compile of ptb2_axi4_lite_slave.v was successful.
+# Compile of tb_ptb2_axi4_lite_slave.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_ptb2_axi4_lite_slave
+# Loading work.ptb2_axi4_lite_slave
+# Loading work.quadratic_sequence
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# === Test AXI4-Lite PTB2 Module ===
+# Time: 75 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 115 - AXI Write: Addr=0x79c00004, Data=2 (binary: 00010)
+# Time: 155 - AXI Write: Addr=0x79c00008, Data=1 (binary: 00001)
+# Time: 235 - AXI Read: Addr=0x79c00010, Data=0x010
+# Ket qua o_Result = 10 
+# Read x1
+# Time: 305 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 345 - AXI Read: Addr=0x79c00014, Data=-1 (binary: 1111)
+# Read x2
+# Time: 425 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 465 - AXI Read: Addr=0x79c00014, Data=-1 (binary: 1111)
+# 
+# === Test completed ===
+# Time: 545 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 585 - AXI Write: Addr=0x79c00004, Data=1 (binary: 00001)
+# Time: 625 - AXI Write: Addr=0x79c00008, Data=-6 (binary: 11010)
+# Time: 705 - AXI Read: Addr=0x79c00010, Data=0x011
+# Ket qua o_Result = 11 
+# Read x1
+# Time: 775 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 815 - AXI Read: Addr=0x79c00014, Data=2 (binary: 0010)
+# Read x2
+# Time: 895 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 935 - AXI Read: Addr=0x79c00014, Data=-3 (binary: 1101)
+# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v(194)
+#    Time: 985 ps  Iteration: 0  Instance: /tb_ptb2_axi4_lite_slave
+# 1
+# Break in Module tb_ptb2_axi4_lite_slave at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v line 194
+add wave -position end sim:/tb_ptb2_axi4_lite_slave/DUT/quad_inst/*
+# Compile of quadratic_sequence.v was successful.
+# Compile of tb_quadratic_sequence.v was successful.
+# Compile of ptb2_axi4_lite_slave.v was successful.
+# Compile of tb_ptb2_axi4_lite_slave.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_ptb2_axi4_lite_slave
+# Loading work.ptb2_axi4_lite_slave
+# Loading work.quadratic_sequence
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# === Test AXI4-Lite PTB2 Module ===
+# Time: 75 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 115 - AXI Write: Addr=0x79c00004, Data=2 (binary: 00010)
+# Time: 155 - AXI Write: Addr=0x79c00008, Data=1 (binary: 00001)
+# Time: 235 - AXI Read: Addr=0x79c00010, Data=0x010
+# Ket qua o_Result = 10 
+# Read x1
+# Time: 305 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 345 - AXI Read: Addr=0x79c00014, Data=-1 (binary: 1111)
+# Read x2
+# Time: 425 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 465 - AXI Read: Addr=0x79c00014, Data=0 (binary: 0000)
+# 
+# === Test completed ===
+# Time: 545 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 585 - AXI Write: Addr=0x79c00004, Data=1 (binary: 00001)
+# Time: 625 - AXI Write: Addr=0x79c00008, Data=-6 (binary: 11010)
+# Time: 705 - AXI Read: Addr=0x79c00010, Data=0x011
+# Ket qua o_Result = 11 
+# Read x1
+# Time: 775 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 815 - AXI Read: Addr=0x79c00014, Data=2 (binary: 0010)
+# Read x2
+# Time: 895 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 935 - AXI Read: Addr=0x79c00014, Data=-3 (binary: 1101)
+# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v(194)
+#    Time: 985 ps  Iteration: 0  Instance: /tb_ptb2_axi4_lite_slave
+# 1
+# Break in Module tb_ptb2_axi4_lite_slave at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v line 194
+# Compile of quadratic_sequence.v was successful.
+# Compile of tb_quadratic_sequence.v was successful.
+# Compile of ptb2_axi4_lite_slave.v was successful.
+# Compile of tb_ptb2_axi4_lite_slave.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_ptb2_axi4_lite_slave
+# Loading work.ptb2_axi4_lite_slave
+# Loading work.quadratic_sequence
+# Compile of quadratic_sequence.v was successful.
+# Compile of tb_quadratic_sequence.v was successful.
+# Compile of ptb2_axi4_lite_slave.v was successful.
+# Compile of tb_ptb2_axi4_lite_slave.v was successful.
+# 4 compiles, 0 failed with no errors.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# === Test AXI4-Lite PTB2 Module ===
+# Time: 75 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 115 - AXI Write: Addr=0x79c00004, Data=2 (binary: 00010)
+# Time: 155 - AXI Write: Addr=0x79c00008, Data=1 (binary: 00001)
+# Time: 235 - AXI Read: Addr=0x79c00010, Data=0x010
+# Ket qua o_Result = 10 
+# Read x1
+# Time: 305 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 345 - AXI Read: Addr=0x79c00014, Data=-1 (binary: 1111)
+# Read x2
+# Time: 425 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 465 - AXI Read: Addr=0x79c00014, Data=0 (binary: 0000)
+# 
+# === Test completed ===
+# Time: 545 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 585 - AXI Write: Addr=0x79c00004, Data=1 (binary: 00001)
+# Time: 625 - AXI Write: Addr=0x79c00008, Data=-6 (binary: 11010)
+# Time: 705 - AXI Read: Addr=0x79c00010, Data=0x011
+# Ket qua o_Result = 11 
+# Read x1
+# Time: 775 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 815 - AXI Read: Addr=0x79c00014, Data=2 (binary: 0010)
+# Read x2
+# Time: 895 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 935 - AXI Read: Addr=0x79c00014, Data=-3 (binary: 1101)
+# Time: 1015 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v(196)
+#    Time: 1065 ps  Iteration: 0  Instance: /tb_ptb2_axi4_lite_slave
+# 1
+# Break in Module tb_ptb2_axi4_lite_slave at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v line 196
+# Compile of quadratic_sequence.v was successful.
+# Compile of tb_quadratic_sequence.v was successful.
+# Compile of ptb2_axi4_lite_slave.v was successful.
+# Compile of tb_ptb2_axi4_lite_slave.v was successful.
+# 4 compiles, 0 failed with no errors.
+# Compile of quadratic_sequence.v was successful.
+# Compile of tb_quadratic_sequence.v was successful.
+# Compile of ptb2_axi4_lite_slave.v was successful.
+# Compile of tb_ptb2_axi4_lite_slave.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_ptb2_axi4_lite_slave
+# Loading work.ptb2_axi4_lite_slave
+# Loading work.quadratic_sequence
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# === Test AXI4-Lite PTB2 Module ===
+# Time: 75 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 125 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 175 - AXI Write: Addr=0x79c00004, Data=2 (binary: 00010)
+# Time: 225 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 275 - AXI Write: Addr=0x79c00008, Data=1 (binary: 00001)
+# Time: 325 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 405 - AXI Read: Addr=0x79c00014, Data=0x010
+# Ket qua o_Result = 10 
+# Read x1
+# Time: 475 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 515 - AXI Read: Addr=0x79c00018, Data=-1 (binary: 1111)
+# Read x2
+# Time: 595 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 635 - AXI Read: Addr=0x79c00018, Data=0 (binary: 0000)
+# 
+# === Test completed ===
+# Time: 715 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 755 - AXI Write: Addr=0x79c00004, Data=1 (binary: 00001)
+# Time: 795 - AXI Write: Addr=0x79c00008, Data=-6 (binary: 11010)
+# Time: 875 - AXI Read: Addr=0x79c00014, Data=0x000
+# Ket qua o_Result = 00 
+# Read x1
+# Time: 945 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 985 - AXI Read: Addr=0x79c00018, Data=0 (binary: 0000)
+# Read x2
+# Time: 1065 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 1105 - AXI Read: Addr=0x79c00018, Data=0 (binary: 0000)
+# Time: 1185 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v(205)
+#    Time: 1235 ps  Iteration: 0  Instance: /tb_ptb2_axi4_lite_slave
+# 1
+# Break in Module tb_ptb2_axi4_lite_slave at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v line 205
+# Compile of quadratic_sequence.v was successful.
+# Compile of tb_quadratic_sequence.v was successful.
+# Compile of ptb2_axi4_lite_slave.v was successful.
+# Compile of tb_ptb2_axi4_lite_slave.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_ptb2_axi4_lite_slave
+# Loading work.ptb2_axi4_lite_slave
+# Loading work.quadratic_sequence
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# === Test AXI4-Lite PTB2 Module ===
+# Time: 75 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 125 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 175 - AXI Write: Addr=0x79c00004, Data=2 (binary: 00010)
+# Time: 225 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 275 - AXI Write: Addr=0x79c00008, Data=1 (binary: 00001)
+# Time: 325 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 405 - AXI Read: Addr=0x79c00014, Data=0x010
+# Ket qua o_Result = 10 
+# Read x1
+# Time: 475 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 515 - AXI Read: Addr=0x79c00018, Data=-1 (binary: 1111)
+# Read x2
+# Time: 595 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 635 - AXI Read: Addr=0x79c00018, Data=-1 (binary: 1111)
+# 
+# === Test completed ===
+# Time: 715 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 755 - AXI Write: Addr=0x79c00004, Data=1 (binary: 00001)
+# Time: 795 - AXI Write: Addr=0x79c00008, Data=-6 (binary: 11010)
+# Time: 875 - AXI Read: Addr=0x79c00014, Data=0x010
+# Ket qua o_Result = 10 
+# Read x1
+# Time: 945 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 985 - AXI Read: Addr=0x79c00018, Data=-1 (binary: 1111)
+# Read x2
+# Time: 1065 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 1105 - AXI Read: Addr=0x79c00018, Data=-1 (binary: 1111)
+# Time: 1185 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v(205)
+#    Time: 1235 ps  Iteration: 0  Instance: /tb_ptb2_axi4_lite_slave
+# 1
+# Break in Module tb_ptb2_axi4_lite_slave at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v line 205
+# Compile of quadratic_sequence.v was successful.
+# Compile of tb_quadratic_sequence.v was successful.
+# Compile of ptb2_axi4_lite_slave.v was successful.
+# Compile of tb_ptb2_axi4_lite_slave.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_ptb2_axi4_lite_slave
+# Loading work.ptb2_axi4_lite_slave
+# Loading work.quadratic_sequence
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# === Test AXI4-Lite PTB2 Module ===
+# Time: 75 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 125 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 175 - AXI Write: Addr=0x79c00004, Data=2 (binary: 00010)
+# Time: 225 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 275 - AXI Write: Addr=0x79c00008, Data=1 (binary: 00001)
+# Time: 325 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 405 - AXI Read: Addr=0x79c00014, Data=0x010
+# Ket qua o_Result = 10 
+# Read x1
+# Time: 475 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 515 - AXI Read: Addr=0x79c00018, Data=-1 (binary: 1111)
+# Read x2
+# Time: 595 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 635 - AXI Read: Addr=0x79c00018, Data=0 (binary: 0000)
+# 
+# === Test completed ===
+# Time: 715 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 765 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 815 - AXI Write: Addr=0x79c00004, Data=2 (binary: 00010)
+# Time: 865 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 915 - AXI Write: Addr=0x79c00008, Data=1 (binary: 00001)
+# Time: 965 - AXI Write: Addr=0x79c0000c, Data=-6 (binary: 11010)
+# Time: 1045 - AXI Read: Addr=0x79c00014, Data=0x000
+# Ket qua o_Result = 00 
+# Read x1
+# Time: 1115 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 1155 - AXI Read: Addr=0x79c00018, Data=0 (binary: 0000)
+# Read x2
+# Time: 1235 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 1275 - AXI Read: Addr=0x79c00018, Data=0 (binary: 0000)
+# Time: 1355 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v(214)
+#    Time: 1405 ps  Iteration: 0  Instance: /tb_ptb2_axi4_lite_slave
+# 1
+# Break in Module tb_ptb2_axi4_lite_slave at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v line 214
+# Compile of quadratic_sequence.v was successful.
+# Compile of tb_quadratic_sequence.v was successful.
+# Compile of ptb2_axi4_lite_slave.v was successful.
+# Compile of tb_ptb2_axi4_lite_slave.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_ptb2_axi4_lite_slave
+# Loading work.ptb2_axi4_lite_slave
+# Loading work.quadratic_sequence
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# === Test AXI4-Lite PTB2 Module ===
+# Time: 75 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 125 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 175 - AXI Write: Addr=0x79c00004, Data=2 (binary: 00010)
+# Time: 225 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 275 - AXI Write: Addr=0x79c00008, Data=1 (binary: 00001)
+# Time: 325 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 405 - AXI Read: Addr=0x79c00014, Data=0x010
+# Ket qua o_Result = 10 
+# Read x1
+# Time: 475 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 515 - AXI Read: Addr=0x79c00018, Data=-1 (binary: 1111)
+# Read x2
+# Time: 595 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 635 - AXI Read: Addr=0x79c00018, Data=0 (binary: 0000)
+# 
+# === Test completed ===
+# Time: 715 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 765 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 815 - AXI Write: Addr=0x79c00004, Data=1 (binary: 00001)
+# Time: 865 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 915 - AXI Write: Addr=0x79c00008, Data=-6 (binary: 11010)
+# Time: 965 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 1045 - AXI Read: Addr=0x79c00014, Data=0x011
+# Ket qua o_Result = 11 
+# Read x1
+# Time: 1115 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 1155 - AXI Read: Addr=0x79c00018, Data=2 (binary: 0010)
+# Read x2
+# Time: 1235 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 1275 - AXI Read: Addr=0x79c00018, Data=-3 (binary: 1101)
+# Time: 1355 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v(216)
+#    Time: 1405 ps  Iteration: 0  Instance: /tb_ptb2_axi4_lite_slave
+# 1
+# Break in Module tb_ptb2_axi4_lite_slave at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v line 216
+# Compile of quadratic_sequence.v was successful.
+# Compile of tb_quadratic_sequence.v was successful.
+# Compile of ptb2_axi4_lite_slave.v was successful.
+# Compile of tb_ptb2_axi4_lite_slave.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_ptb2_axi4_lite_slave
+# Loading work.ptb2_axi4_lite_slave
+# Loading work.quadratic_sequence
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# === Test AXI4-Lite PTB2 Module ===
+# Time: 75 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 125 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 175 - AXI Write: Addr=0x79c00004, Data=2 (binary: 00010)
+# Time: 225 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 275 - AXI Write: Addr=0x79c00008, Data=1 (binary: 00001)
+# Time: 325 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 405 - AXI Read: Addr=0x79c00014, Data=0x010
+# Ket qua o_Result = 10 
+# Read x1
+# Time: 475 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 515 - AXI Read: Addr=0x79c00018, Data=-1 (binary: 1111)
+# Read x2
+# Time: 595 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 635 - AXI Read: Addr=0x79c00018, Data=0 (binary: 0000)
+# 
+# === Test completed ===
+# Time: 715 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 765 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 815 - AXI Write: Addr=0x79c00004, Data=1 (binary: 00001)
+# Time: 865 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 915 - AXI Write: Addr=0x79c00008, Data=-6 (binary: 11010)
+# Time: 965 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 1045 - AXI Read: Addr=0x79c00014, Data=0x011
+# Ket qua o_Result = 11 
+# Read x1
+# Time: 1115 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 1155 - AXI Read: Addr=0x79c00018, Data=2 (binary: 0010)
+# Read x2
+# Time: 1235 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 1275 - AXI Read: Addr=0x79c00018, Data=-3 (binary: 1101)
+# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v(214)
+#    Time: 1325 ps  Iteration: 0  Instance: /tb_ptb2_axi4_lite_slave
+# 1
+# Break in Module tb_ptb2_axi4_lite_slave at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v line 214
+# Compile of quadratic_sequence.v was successful.
+# Compile of tb_quadratic_sequence.v was successful.
+# Compile of ptb2_axi4_lite_slave.v was successful.
+# Compile of tb_ptb2_axi4_lite_slave.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_ptb2_axi4_lite_slave
+# Loading work.ptb2_axi4_lite_slave
+# Loading work.quadratic_sequence
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# === Test AXI4-Lite PTB2 Module ===
+# Time: 75 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 125 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 175 - AXI Write: Addr=0x79c00004, Data=2 (binary: 00010)
+# Time: 225 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 275 - AXI Write: Addr=0x79c00008, Data=1 (binary: 00001)
+# Time: 325 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 405 - AXI Read: Addr=0x79c00014, Data=0x010
+# Ket qua o_Result = 10 
+# Read x1
+# Time: 475 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 515 - AXI Read: Addr=0x79c00018, Data=-1 (binary: 1111)
+# Read x2
+# 
+# === Test completed ===
+# Time: 645 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 695 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 745 - AXI Write: Addr=0x79c00004, Data=1 (binary: 00001)
+# Time: 795 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 845 - AXI Write: Addr=0x79c00008, Data=-6 (binary: 11010)
+# Time: 895 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 975 - AXI Read: Addr=0x79c00014, Data=0x010
+# Ket qua o_Result = 10 
+# Read x1
+# Time: 1045 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 1085 - AXI Read: Addr=0x79c00018, Data=0 (binary: 0000)
+# Read x2
+# Time: 1165 - AXI Write: Addr=0x79c00010, Data=1 (binary: 00001)
+# Time: 1205 - AXI Read: Addr=0x79c00018, Data=0 (binary: 0000)
+# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v(214)
+#    Time: 1255 ps  Iteration: 0  Instance: /tb_ptb2_axi4_lite_slave
+# 1
+# Break in Module tb_ptb2_axi4_lite_slave at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v line 214
+# Compile of quadratic_sequence.v was successful.
+# Compile of tb_quadratic_sequence.v was successful.
+# Compile of ptb2_axi4_lite_slave.v was successful.
+# Compile of tb_ptb2_axi4_lite_slave.v was successful.
+# 4 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_ptb2_axi4_lite_slave
+# Loading work.ptb2_axi4_lite_slave
+# Loading work.quadratic_sequence
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# === Test AXI4-Lite PTB2 Module ===
+# Time: 75 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 115 - AXI Write: Addr=0x79c00004, Data=2 (binary: 00010)
+# Time: 155 - AXI Write: Addr=0x79c00008, Data=1 (binary: 00001)
+# Time: 235 - AXI Read: Addr=0x79c00010, Data=0x010
+# Ket qua o_Result = 10 
+# Read x1
+# Time: 305 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 345 - AXI Read: Addr=0x79c00014, Data=-1 (binary: 1111)
+# Read x2
+# Time: 425 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 465 - AXI Read: Addr=0x79c00014, Data=-1 (binary: 1111)
+# 
+# === Test completed ===
+# Time: 545 - AXI Write: Addr=0x79c00000, Data=1 (binary: 00001)
+# Time: 585 - AXI Write: Addr=0x79c00004, Data=1 (binary: 00001)
+# Time: 625 - AXI Write: Addr=0x79c00008, Data=-6 (binary: 11010)
+# Time: 705 - AXI Read: Addr=0x79c00010, Data=0x011
+# Ket qua o_Result = 11 
+# Read x1
+# Time: 775 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 815 - AXI Read: Addr=0x79c00014, Data=2 (binary: 0010)
+# Read x2
+# Time: 895 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# Time: 935 - AXI Read: Addr=0x79c00014, Data=-3 (binary: 1101)
+# Time: 1015 - AXI Write: Addr=0x79c0000c, Data=1 (binary: 00001)
+# ** Note: $finish    : E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v(196)
+#    Time: 1015 ps  Iteration: 1  Instance: /tb_ptb2_axi4_lite_slave
+# 1
+# Break in Module tb_ptb2_axi4_lite_slave at E:/KhoaHoc_TKVM_Acronics/SoC_Xilinx_Spartan6/design_PTB2_AXI4LITE/ptb2/tb_ptb2_axi4_lite_slave.v line 196
+# End time: 19:48:22 on Aug 05,2025, Elapsed time: 1:25:09
+# Errors: 0, Warnings: 1
